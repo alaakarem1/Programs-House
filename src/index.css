@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-back-ground: #02021E;
+  --color-nav-color: #FDC448;
+  --color-text-color: #007BFF;
+  --color-btn-color: #1915FF;
+  --color-title: #11112B;
+  --color-btn: #3719C9;
+  --color-dis-btn: #04042A;
+  --font-azonix: 'azonix', sans-serif;
+  --font-glitch: 'glitch', sans-serif;
+  --font-cairo: 'cairo', sans-serif;
+  --font-nebula: 'nebula', sans-serif;
+  --font-inter: 'inter', sans-serif;
+
+}
+
+@font-face {
+  font-family: 'glitch';
+  src: url('assets/Doctor Glitch.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'azonix';
+  src: url('assets/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'inter';
+  src: url('assets/Inter.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cairo';
+  src: url('assets/Cairo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nebula';
+  src: url('assets/Nebula-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.hero-title {
+  font-size: 80px;
+  color: #11112b;
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(-45deg, #007bff, #ff6f00);
+  -webkit-background-clip: text;
+  -webkit-text-stroke: 5px transparent;
+  margin: 0;
+}
+
+
