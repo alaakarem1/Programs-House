@@ -5,8 +5,6 @@ import discoverIcon from "../../assets/Search Icon.svg";
 import designIcon from "../../assets/Design Icon.svg";
 import developmentIcon from "../../assets/Develop Icon.svg";
 import supportIcon from "../../assets/Support icon.svg";
-import  Button  from "../button/Button";
-import contactIcon from "../../assets/Arrow icon.svg";
 import textButton from "../../assets/Text Button.png";
 import textButton2 from "../../assets/text button 2.png";
 
