@@ -101,11 +101,11 @@ function ServicesSection() {
             {/* <Button className=""/> */}
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-5xl mx-auto mt-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto mt-10">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-gray-100 py-5 px-8 rounded-3xl border border-gray-300 hover:shadow-[-20px_20px_4px_rgba(0,0,0,3)] transition-all duration-500 ease-in-out transform hover:-translate-y-2"
+              className="group bg-gray-100 py-5 px-16 rounded-3xl border border-gray-300 hover:shadow-[-20px_20px_4px_rgba(0,0,0,3)] transition-all duration-500 ease-in-out transform hover:-translate-y-2"
             >
               <div className="flex items-center gap-1 mb-4">
                 <img
@@ -120,7 +120,7 @@ function ServicesSection() {
                   {service.title}
                 </h2>
               </div>
-              <p className="text-gray-600 text-xl pl-24 font-poppin font-light">
+              <p className="text-gray-600 text-xl pl-32 font-poppin font-light">
                 {service.description}
               </p>
             </div>
