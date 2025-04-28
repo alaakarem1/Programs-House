@@ -44,7 +44,7 @@ export default function Navbar() {
                         }}
                         className="relative inline-block   p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
                     >
-                        <button className="flex items-center gap-5 bg-btn text-white font-medium py-2 px-5 rounded-full ">
+                        <button className="flex items-center gap-5 bg-btn text-white font-alex py-2 px-5 rounded-full ">
                             Contact Us
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 40 40" fill="none">
                                 <circle cx="20" cy="20" r="20" fill="white" />
