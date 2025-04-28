@@ -1,0 +1,11 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Arrow icon">
+<g id="Ellipse 8">
+<circle cx="24" cy="24" r="24" fill="#EEF0F1"/>
+<circle cx="24" cy="24" r="23.5" stroke="black" stroke-opacity="0.2"/>
+</g>
+<g id="Arrow icon_2">
+<path id="Icon" d="M16 32L32 16M32 16H18.2366M32 16V29.7634" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</svg>

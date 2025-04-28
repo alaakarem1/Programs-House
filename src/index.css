@@ -1,51 +1,61 @@
 @import "tailwindcss";
-
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 @theme {
-  --color-back-ground: #02021E;
-  --color-nav-color: #FDC448;
-  --color-text-color: #007BFF;
-  --color-btn-color: #1915FF;
-  --color-title: #11112B;
-  --color-btn: #3719C9;
-  --color-dis-btn: #04042A;
-  --font-azonix: 'azonix', sans-serif;
-  --font-glitch: 'glitch', sans-serif;
-  --font-cairo: 'cairo', sans-serif;
-  --font-nebula: 'nebula', sans-serif;
-  --font-inter: 'inter', sans-serif;
-
+  --color-back-ground: #02021e;
+  --color-nav-color: #fdc448;
+  --color-text-color: #007bff;
+  --color-btn-color: #1915ff;
+  --color-title: #11112b;
+  --color-btn: #3719c9;
+  --color-dis-btn: #04042a;
+  --font-azonix: "azonix", sans-serif;
+  --font-glitch: "glitch", sans-serif;
+  --font-cairo: "cairo", sans-serif;
+  --font-nebula: "nebula", sans-serif;
+  --font-inter: "inter", sans-serif;
+  --font-alex: "alex", sans-serif;
+  --font-poppin: "poppin", sans-serif;
 }
 
 @font-face {
-  font-family: 'glitch';
-  src: url('assets/Doctor Glitch.otf') format('opentype');
+  font-family: "glitch";
+  src: url("assets/Doctor Glitch.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'azonix';
-  src: url('assets/Azonix.otf') format('opentype');
+  font-family: "azonix";
+  src: url("assets/Azonix.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'inter';
-  src: url('assets/Inter.ttf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'cairo';
-  src: url('assets/Cairo.otf') format('opentype');
+  font-family: "inter";
+  src: url("assets/Inter.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'nebula';
-  src: url('assets/Nebula-Regular.otf') format('opentype');
+  font-family: "cairo";
+  src: url("assets/Cairo.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nebula";
+  src: url("assets/Nebula-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "alex";
+  src: url("assets/Alexandria.ttf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -63,4 +73,21 @@
   margin: 0;
 }
 
+/* .folder-shape {
+  width: 1500px;
+  height: 500px;
+  background: black;
+  clip-path: path("M30 0 H320 Q330 0 350 20 H470 Q500 20 500 50 V470 Q500 500 470 500 H30 Q0 500 0 470 V30 Q0 0 30 0 Z");
+} */
 
+
+@layer utilities {
+  .animate-spin-slow {
+    animation: spin 4s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+}

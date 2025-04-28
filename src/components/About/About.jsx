@@ -21,7 +21,7 @@ export default function About() {
                         <img
                             src={personImg}
                             alt="VR Person"
-                            className="w-[500px]  pb-22 p ml-8"
+                            className="w-[1000px]  pb-10 mr-96"
                         />
                     </div>
 

@@ -7,6 +7,7 @@ import About from './components/About/About';
 import Clintes from './components/Clients/Clintes';
 import Text2 from './components/Text2/Text2';
 import Clients_feedback from './components/Clients Feedback/Clients feedback';
+import Services from './components/Services/Services';
 function App() {
 
 
@@ -17,6 +18,7 @@ function App() {
       <Hero/>
       <Text/>
       <About/>
+      <Services/>
       <Clintes/>
       <Text2/>
       <Clients_feedback/>

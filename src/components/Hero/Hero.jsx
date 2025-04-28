@@ -78,7 +78,7 @@ export default function Hero() {
                 </div>
 
                 {/* النص الثابت */}
-                <div className="absolute right-15 top-[20%] text-left text-5xl font-glitch font-bold  text-white leading-tight ">
+                <div className="absolute right-25 top-[20%] text-left text-5xl font-glitch font-bold  text-white leading-tight ">
                     <p>FOR</p>
                     <p>EVERY</p>
                     <p>BUSINESS</p>
