@@ -85,7 +85,7 @@ function WhyChooseUs() {
           </div>
 
           {/* الكارت 1 */}
-          <div className="flex flex-col bg-[url(./src/assets/card1.png)] p-6 bg-contain bg-no-repeat w-80 ">
+          <div className="flex flex-col bg-[url(src/assets/card1.png)] p-6 bg-contain bg-no-repeat w-80 ">
             <div className="text-2xl mx-auto">
               <img src={hands} alt="" />
             </div>
@@ -101,7 +101,7 @@ function WhyChooseUs() {
           </div>
 
           {/* الكارت 2 */}
-          <div className="flex flex-col bg-[url(./src/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-80">
+          <div className="flex flex-col bg-[url(src/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-80">
             <div className="text-2xl mx-auto pt-20 pb-7">
               <img src={fifty} alt="" />
             </div>
@@ -117,7 +117,7 @@ function WhyChooseUs() {
 
           {/* الكارت 3 */}
           <div
-            className="flex flex-col bg-[url(./src/assets/card3.png)] p-6 bg-contain bg-no-repeat w-80 "
+            className="flex flex-col bg-[url(src/assets/card3.png)] p-6 bg-contain bg-no-repeat w-80 "
             style={{
               clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%)",
             }}
