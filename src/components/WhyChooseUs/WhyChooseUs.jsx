@@ -1,68 +1,140 @@
 import React from "react";
+import hands from "../../assets/hand.png";
+import fifty from "../../assets/50+.png";
+import infinity from "../../assets/infinity.gif";
+import { useState } from "react";
+import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
+import "@splidejs/react-splide/css";
+import logo from "../../assets/logo2.png";
+import card0 from "../../assets/card0.png";
 
+const paragraphs = [
+  "A creative team of developers and designers dedicated to turning ideas into smart digital solutions.",
+  "Offering customized software and seamless platforms designed to fit every business challenge.",
+  "Combining creativity, technology, and industry insight to help businesses grow smarter and faster.",
+];
 function WhyChooseUs() {
+  const [currentSlide, setCurrentSlide] = useState(0);
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#02021E] via-[#030320] to-[#EDA93F] py-32 px-6">
+    <section className="min-h-screen bg-gradient-to-b from-[#02021E] via-[#030320] to-[#EDA93F] py-32 px-6 ">
       <div className="max-w-7xl mx-auto text-center">
         {/* Title */}
-        <h2 className="text-4xl leading-[1.25] md:text-8xl font-normal text-white font-glitch text-left ">
+        <h2 className="text-4xl leading-[1.25] md:text-8xl font-normal text-white font-glitch text-left  ">
           <span className="text-[#FF6F00]">WHY </span>
           <br />
           <span className="text-white">BUSINESSES </span>
           <br />
           <span className="text-[#007BFF]">CHOOSE US</span>
         </h2>
+        <div className="flex flex-col md:flex-row items- justify-center gap-16 pt-28">
+          {/* الكارت الأبيض */}
+          <div className="relative w-80 h-[500px] flex items-center justify-center">
+            {/* صورة الخلفية */}
+            <img
+              src={card0}
+              alt="Background"
+              className="absolute inset-0 w-full h-full object-contain"
+            />
 
-        {/* Cards Container */}
-         {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-8"> */}
-          {/* Card 1 */}
-          {/* <div className="bg-white rounded-2xl p-8 flex flex-col items-center shadow-lg">
-            <img src="/assets/logo.png" alt="Logo" className="w-16 h-16 mb-6" />
-            <p className="text-gray-800 text-lg">
-              A creative team of developers and designers dedicated to turning ideas into smart digital solutions.
-            </p>
-          </div> */}
+            {/* المحتوى فوق الصورة */}
+            <div className="relative flex flex-col items-center justify-between text-center text-black h-full w-full p-6">
+              {/* لوجو ثابت */}
+              <img src={logo} alt="Logo" className="w-20 h-20 mr-32" />
 
-          {/* Card 2 */}
-          {/* <div className="border border-white/40 rounded-2xl p-8 text-white backdrop-blur-sm">
-            <div className="mb-6"> */}
-              {/* Icon here if needed */}
-              {/* <svg className="mx-auto w-10 h-10 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12l2 2 4-4"></path>
-              </svg>
-              <h3 className="text-2xl font-semibold">Trusted Partners</h3>
+              {/* النصوص سلايدر */}
+              <div className="flex flex-col justify-between flex-grow w-full">
+                <Splide
+                  options={{
+                    type: "loop",
+                    autoplay: true,
+                    interval: 3000,
+                    pauseOnHover: false,
+                    arrows: false,
+                    pagination: false,
+                  }}
+                  hasTrack={false}
+                  onMove={(splide, newIndex) => setCurrentSlide(newIndex)}
+                  className="w-full"
+                >
+                  <SplideTrack>
+                    {paragraphs.map((text, index) => (
+                      <SplideSlide key={index}>
+                        <p className="text-3xl font-normal z-20 font-cairo text-left p-4 pt-10">
+                          {text}
+                        </p>
+                      </SplideSlide>
+                    ))}
+                  </SplideTrack>
+                </Splide>
+              </div>
+
+              {/* المؤشرات تحت ثابتة */}
+              <div className="flex items-center justify-center gap-3">
+                {paragraphs.map((_, index) => (
+                  <div
+                    key={index}
+                    className={`transition-all duration-300 rounded-full ${
+                      currentSlide === index
+                        ? "w-8 h-2 bg-[#3719C9]"
+                        : "w-4 h-2 bg-[#D9D9D9]"
+                    }`}
+                  ></div>
+                ))}
+              </div>
             </div>
-            <p className="text-sm text-white/80">
-              Businesses across industries rely on us not just for software, but for strategic tech partnerships that drive long-term success.
-            </p>
-          </div> */}
+          </div>
 
-          {/* Card 3 */}
-          {/* <div className="border border-white/40 rounded-2xl p-8 text-white backdrop-blur-sm">
-            <div className="mb-6"> */}
-              {/* 50+ */}
-              {/* <div className="text-4xl font-bold mb-2">50+</div>
-              <h3 className="text-2xl font-semibold">Completed Projects</h3>
+          {/* الكارت 1 */}
+          <div className="flex flex-col bg-[url(src/assets/card1.png)] p-6 bg-contain bg-no-repeat w-80 ">
+            <div className="text-2xl mx-auto">
+              <img src={hands} alt="" />
             </div>
-            <p className="text-sm text-white/80">
-              Every project we deliver is built with precision, creativity, and a deep understanding of each client’s unique goals.
-            </p>
-          </div> */}
+            <hr className="border-white my-6" />
 
-          {/* Card 4 */}
-          {/* <div className="border border-white/40 rounded-2xl p-8 text-white backdrop-blur-sm">
-            <div className="mb-6"> */}
-              {/* Icon here if needed */}
-              {/* <svg className="mx-auto w-10 h-10 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <h3 className="text-2xl font-semibold">Positive Vibes</h3>
-            </div>
-            <p className="text-sm text-white/80">
-              We make technology simple, delivering smart solutions through a smooth, collaborative, and friendly process.
+            <h3 className="text-2xl font-bold mb-2 mx-auto text-white font-cairo ">
+              Trusted Partners
+            </h3>
+            <p className=" text-white font-cairo font-thin text-md  pt-6 text-left pl-5 ">
+              Businesses across industries rely on us not just for software, but
+              for strategic tech partnerships that drive long-term success.
             </p>
           </div>
-        </div>  */}
+
+          {/* الكارت 2 */}
+          <div className="flex flex-col bg-[url(src/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-80">
+            <div className="text-2xl mx-auto pt-20 pb-7">
+              <img src={fifty} alt="" />
+            </div>
+            <hr className="border-white my-6" />
+            <h4 className="text-2xl font-bold mb-2 mx-auto text-white font-cairo  ">
+              Completed Projects
+            </h4>
+            <p className="text-white font-cairo font-thin text-md pt-6  text-left">
+              Every project we deliver is built with precision, creativity, and
+              a deep understanding of each client’s unique goals.
+            </p>
+          </div>
+
+          {/* الكارت 3 */}
+          <div
+            className="flex flex-col bg-[url(src/assets/card3.png)] p-6 bg-contain bg-no-repeat w-80 "
+            style={{
+              clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%)",
+            }}
+          >
+            <div className="w-20 mx-auto">
+              <img src={infinity} alt="" />
+            </div>
+            <hr className="border-white my-6" />
+            <h3 className="text-2xl font-bold mb-2 mx-auto text-white font-cairo ">
+              Positive Vibes
+            </h3>
+            <p className="text-white font-cairo font-thin text-md  pt-3 text-left pl-3">
+              We make technology simple, delivering smart solutions through a
+              smooth, collaborative, and friendly process.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
