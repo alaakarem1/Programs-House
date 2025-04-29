@@ -16,7 +16,7 @@ const paragraphs = [
 function WhyChooseUs() {
   const [currentSlide, setCurrentSlide] = useState(0);
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#02021E] via-[#030320] to-[#EDA93F] py-32 px-6 ">
+    <section className="min-h-screen bg-gradient-to-b from-[#02021E] via-[#281D24] to-[#EDA93F] border-bottom py-28 px-6 ">
       <div className="max-w-7xl mx-auto text-center">
         {/* Title */}
         <h2 className="text-4xl leading-[1.25] md:text-8xl font-normal text-white font-glitch text-left  ">
@@ -39,7 +39,7 @@ function WhyChooseUs() {
             {/* المحتوى فوق الصورة */}
             <div className="relative flex flex-col items-center justify-between text-center text-black h-full w-full p-6">
               {/* لوجو ثابت */}
-              <img src={logo} alt="Logo" className="w-20 h-20 mr-32" />
+              <img src={logo} alt="Logo" className="w-20 h-20 mr-36" />
 
               {/* النصوص سلايدر */}
               <div className="flex flex-col justify-between flex-grow w-full">
@@ -85,7 +85,7 @@ function WhyChooseUs() {
           </div>
 
           {/* الكارت 1 */}
-          <div className="flex flex-col bg-[url(src/assets/card1.png)] p-6 bg-contain bg-no-repeat w-80 ">
+          <div className="flex flex-col bg-[url(./src/assets/card1.png)] p-6 bg-contain bg-no-repeat w-80 ">
             <div className="text-2xl mx-auto">
               <img src={hands} alt="" />
             </div>
@@ -101,7 +101,7 @@ function WhyChooseUs() {
           </div>
 
           {/* الكارت 2 */}
-          <div className="flex flex-col bg-[url(src/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-80">
+          <div className="flex flex-col bg-[url(./src/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-80">
             <div className="text-2xl mx-auto pt-20 pb-7">
               <img src={fifty} alt="" />
             </div>
@@ -117,7 +117,7 @@ function WhyChooseUs() {
 
           {/* الكارت 3 */}
           <div
-            className="flex flex-col bg-[url(src/assets/card3.png)] p-6 bg-contain bg-no-repeat w-80 "
+            className="flex flex-col bg-[url(./src/assets/card3.png)] p-6 bg-contain bg-no-repeat w-80 "
             style={{
               clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%)",
             }}
@@ -136,6 +136,7 @@ function WhyChooseUs() {
           </div>
         </div>
       </div>
+      
     </section>
   );
 }
