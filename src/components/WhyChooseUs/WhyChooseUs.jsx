@@ -16,7 +16,7 @@ const paragraphs = [
 function WhyChooseUs() {
   const [currentSlide, setCurrentSlide] = useState(0);
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#02021E] via-[#281D24] to-[#EDA93F] border-bottom py-28 px-6 ">
+    <section className="min-h-screen bg-gradient-to-b from-[#02021E] via-[#281D24] to-[#EDA93F] border-bottom py-28 px-6  rounded-b-3xl">
       <div className="max-w-7xl mx-auto text-center">
         {/* Title */}
         <h2 className="text-4xl leading-[1.25] md:text-8xl font-normal text-white font-glitch text-left  ">
