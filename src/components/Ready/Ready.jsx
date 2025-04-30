@@ -4,39 +4,17 @@ import RotatingText from "../RotatingText/RotatingText";
 import readyImage from '/assets/ready2.svg';
 export default function CallToAction() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gradient-to-b from-[#05031A] to-[#020111] px-4">
+    <div className="flex items-center justify-center min-h-screen bg-[#02021E] px-4 mb-6">
       <div className="relative max-w-4xl w-[1500px] bg-[url('/assets/ready2.svg')] bg-no-repeat bg-contain bg-center p-10 md:p-16 text-center ">
         <h1 className="text-2xl md:text-5xl font-normal text-[#000000] mb-6 font-azonix leading-snug">
           READY TO SHAPE <br />
           YOUR NEXT{" "}
           <RotatingText
-            texts={[
-              "BIG IDEA?",
-              "BIG LAUNCH?",
-
-              "CLEAN CODE?",
-
-              "SMART STACK?",
-
-              "AGILE MOVE?",
-
-              "TECH UPGRADE?",
-
-              "CODE REVAMP?",
-
-              " MVP POWER?",
-
-              "NEXT PLATFORM?",
-
-              "SCALABLE SYSTEM?",
-
-              "UX REVOLUTION?",
+            texts={["BIG IDEA?","BIG LAUNCH?","CLEAN CODE?","SMART STACK?","AGILE MOVE?","CODE REVAMP?"," MVP POWER?",
 
               "DIGITAL CORE?",
 
               "FUTURE APP?",
-
-              "CUSTOM BUILD?",
 
               "CLOUD SHIFT?",
 

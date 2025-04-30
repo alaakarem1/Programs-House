@@ -10,6 +10,7 @@ import Clients_feedback from './components/Clients Feedback/Clients feedback';
 import Services from './components/Services/Services';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Ready from './components/Ready/Ready';
+import Footer from './components/Footer/Footer';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <Clients_feedback/>
       <WhyChooseUs/>
       <Ready/>
+      <Footer/>
       </div>
     </>
   )
