@@ -9,11 +9,14 @@ import Text2 from './components/Text2/Text2';
 import Clients_feedback from './components/Clients Feedback/Clients feedback';
 import Services from './components/Services/Services';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
+import Ready from './components/Ready/Ready';
+
 function App() {
 
 
   return (
     <>
+    <div className='bg-[#02021E]'>
       {/* <h1 className='text-green-700 text-bold'>welcome</h1> */}
       <Navbar/>
       <Hero/>
@@ -24,7 +27,8 @@ function App() {
       <Text2/>
       <Clients_feedback/>
       <WhyChooseUs/>
-
+      <Ready/>
+      </div>
     </>
   )
 }

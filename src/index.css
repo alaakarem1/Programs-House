@@ -3,6 +3,7 @@
 /* @tailwind base;
 @tailwind components;
 @tailwind utilities; */
+
 @theme {
   --color-back-ground: #02021e;
   --color-nav-color: #fdc448;
