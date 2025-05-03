@@ -44,7 +44,7 @@ function Footer() {
                     alt="mail"
                     className="w-12 h-12 rounded-full"
                   />
-                  <span className="font-medium text-gray-300">
+                  <span className=" text-lg text-gray-300">
                     Drop us a mail
                   </span>
                 </div>
@@ -59,7 +59,7 @@ function Footer() {
                     alt="call"
                     className="w-12 h-12 rounded-full"
                   />
-                  <span className="font-cairo text-gray-300">Call Us</span>
+                  <span className="font-cairo text-lg text-gray-300">Call Us</span>
                 </div>
                 <span className="mt-1 text-lg">(+20) 10 7010 1091</span>
               </div>

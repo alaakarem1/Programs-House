@@ -15,13 +15,13 @@ export default function About() {
                 />
 
 
-                <div className="relative z-10 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between ">
+                <div className="relative z-10  mx-auto flex flex-col lg:flex-row items-center justify-between ">
 
-                    <div className="w-full lg:w-4/10 flex">
+                    <div className=" flex">
                         <img
                             src={personImg}
                             alt="VR Person"
-                            className="w-[1000px]  pb-10 mr-96"
+                            className="w-[540px] pb-21 ml-22 "
                         />
                     </div>
 
