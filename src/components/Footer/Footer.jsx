@@ -42,7 +42,7 @@ function Footer() {
                   <img
                     src="/assets/message.gif"
                     alt="mail"
-                    className="w-12 h-12 rounded-full"
+                    className="w-10 h-10 rounded-full"
                   />
                   <span className=" text-lg text-gray-300">
                     Drop us a mail
@@ -57,7 +57,7 @@ function Footer() {
                   <img
                     src="/assets/call.gif"
                     alt="call"
-                    className="w-12 h-12 rounded-full"
+                    className="w-10 h-10 rounded-full"
                   />
                   <span className="font-cairo text-lg text-gray-300">Call Us</span>
                 </div>
