@@ -6,3 +6,14 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(),tailwindcss()],
 })
+module.exports = {
+  theme: {
+    extend: {},
+    screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
+  },
+};

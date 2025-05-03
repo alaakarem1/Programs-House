@@ -11,6 +11,8 @@ import Services from './components/Services/Services';
 import WhyChooseUs from './components/WhyChooseUs/WhyChooseUs';
 import Ready from './components/Ready/Ready';
 import Footer from './components/Footer/Footer';
+// import HeroLarge from './components/Herolg/HeroLarge';
+// import HeroSm from './components/Hero/HeroSm';
 
 function App() {
 
@@ -21,6 +23,7 @@ function App() {
       {/* <h1 className='text-green-700 text-bold'>welcome</h1> */}
       <Navbar/>
       <Hero/>
+      {/* <HeroLarge/> */}
       <Text/>
       <About/>
       <Services/>
