@@ -39,7 +39,7 @@ export default function Hero() {
               backgroundPosition: "200% center",
               transition: { duration: 2, repeat: Infinity, ease: "circInOut" },
             }}
-            className="relative inline-block mt-100 p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-dis-btn via-btn-color to-btn-color lg:mt-20 lg:ml-36 lg:mx-14 lg:p-[2px]"
+            className="relative inline-block ml-10 mt-100 p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-dis-btn via-btn-color to-btn-color lg:mt-20 lg:ml-36 lg:mx-14 lg:p-[2px]"
           >
             <button className="relative z-10 px-4 py-1 w-full h-full rounded-full bg-dis-btn flex items-center justify-center lg:z-10 lg:px-7 lg:py-3 lg:relative lg:flex lg:items-center lg:justify-center">
               <span className="font-nebula text-sm tracking-widest text-white lg:text-xl">
@@ -76,16 +76,16 @@ export default function Hero() {
         </div>
 
         {/* الروبوت */}
-        <div className="z-10 lg:relative lg:mr-25 lg:z-10 lg:overflow-hidden">
+        <div className="z-10 overflow-hidden lg:relative lg:mr-25 lg:z-10 lg:overflow-hidden">
           <img
             src={robotImg}
             alt="robot"
-            className="absolute top-50 right-26 w-[250px] lg:w-[550px] drop-shadow-[0_0_8px_#5f4fd8] lg:overflow-hidden"
+            className="absolute overflow-hidden top-50 right-20 w-[250px] lg:w-[550px] drop-shadow-[0_0_8px_#5f4fd8] lg:overflow-hidden"
           />
         </div>
 
         {/* النص الثابت */}
-        <div className="text-xl absolute right-20 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none lg:absolute lg:right-25 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
+        <div className="text-xl absolute right-15 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none lg:absolute lg:right-25 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
           <p>FOR</p>
           <p>EVERY</p>
           <p>BUSINESS</p>
