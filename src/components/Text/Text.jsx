@@ -3,7 +3,7 @@ import React from 'react'
 export default function Text() {
     return (
         <>
-            <section className="bg-back-ground  text-white px-6 md:px-20 py-32 font-normal font-azonix">
+            <section className="bg-back-ground text-center  text-white px-6 md:px-20 py-32 font-normal font-azonix">
                 <div className=" space-y-4 text-3xl pl-8 leading-relaxed ">
                     <p className='text-4xl lg:text-6xl'>
                         GREAT BUSINESSES{' '}

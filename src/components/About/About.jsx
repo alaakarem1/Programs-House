@@ -6,41 +6,41 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <>
-            <section className="relative bg-back-ground w-full py-20 px-6 md:px-20 ">
+            <section className="relative bg-back-ground w-full lg:py-20 px-6 md:px-20 ">
 
                 <img
                     src={shapeBg}
                     alt="shape background"
-                    className="absolute top- left-1/2 w-[85%] -translate-x-1/2 -translate-y-1/2 z-0 lg:absolute lg:h-xl lg:top-1/2 lg:left-1/2 lg:w-[80%] lg:-translate-x-1/2 lg:-translate-y-1/2 lg:z-0"
+                    className="hidden absolute left-1/2 w-[85%] -translate-x-1/2 -translate-y-1/2 z-0 lg:absolute lg:block lg:h-xl lg:top-1/2 lg:left-1/2 lg:w-[80%] lg:-translate-x-1/2 lg:-translate-y-1/2 lg:z-0"
                 />
 
 
-                <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between ">
+                <div className="relative z-10 flex flex-col gap-8 lg:flex-row items-center justify-between ">
 
-                    <div className=" flex">
+                    <div className="w-72 ">
                         <img
                             src={personImg}
                             alt="VR Person"
-                            className="absolute  -translate-y-8/12 ml-2.5 mt-2 w-46  lg:w-[540px] lg:pt-33 lg:ml-18"
+                            className="lg:absolute lg:-translate-y-8/12  lg:mt-2 lg:pt-48 lg:ml-22 lg:w-[560px] "
                         />
                     </div>
 
 
-                    <div className=" w-full lg:w-1/2 text-white text-center lg:text-left lg:space-y-5 font-azonix ">
-                        <div className='pl-25  lg:pl-9 lg:mt-10'>
-                            <p className="uppercase text-sm  lg:text-3xl  tracking-widest text-white lg:pb-4">AT</p>
+                    <div className=" lg:w-1/2 text-white text-center lg:text-left lg:space-y-5 font-azonix ">
+                        <div className='lg:pl-9 lg:mt-10'>
+                            <p className="uppercase text-2xl  lg:text-3xl  tracking-widest text-white lg:pb-4">AT</p>
                             <h2 className="text-3xl  font-bold">
-                                <span className=" text-transparent text-sm bg-clip-text bg-gradient-to-r bg-text-color lg:text-5xl font-azonix font-normal ">
+                                <span className=" text-transparent text-2xl bg-clip-text bg-gradient-to-r bg-text-color lg:text-5xl font-azonix font-normal ">
                                     PROGRAMS HOUSE
                                 </span>
                             </h2>
                         </div>
 
                         <div className=''>
-                            <p className=" text-sm text-gray-100 font-azonix font-normal lg:text-xl ">
-                                WE KNOW THAT SUCCESS ISN’T JUST ABOUT IDEAS,
+                            <p className="text-gray-100 mx-2 text-2xl font-azonix font-normal lg:text-xl ">
+                                WE KNOW THAT SUCCESS ISN’T JUST ABOUT IDEAS,{" "}
                                 <br className='hidden lg:block'/>
-                                <br />
+                                <br className='hidden lg:block' />
                                 IT’S ABOUT HAVING THE RIGHT SOFTWARE.
                             </p>
                             <p className="hidden lg:font-cairo lg:text-gray-400 lg:block lg:mx-auto lg:pt-5 lg:text-xl lg:font-normal">
@@ -57,9 +57,9 @@ export default function About() {
                                 backgroundPosition: "200% center",
                                 transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
                             }}
-                            className="relative inline-block mt-20 mx-14 p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
+                            className="relative mt-10 mx-20 p-[2px] lg:inline-block lg:mt-20 lg:mx-14 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
                         >
-                            <button className="relative z-10 px-6 py-4 w-full h-full rounded-full bg-[#0B0896] flex items-center justify-center">
+                            <button className="relative z-10 px-2 py-2 w-full h-full lg:px-6 lg:py-4 rounded-full bg-[#0B0896] flex items-center justify-center">
                                 <span className="font-nebula text-xl tracking-widest text-white">WHO WE ARE</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"

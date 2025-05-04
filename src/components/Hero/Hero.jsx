@@ -82,7 +82,7 @@ export default function Hero() {
           <img
             src={robotImg}
             alt="robot"
-            className="absolute overflow-hidden drop-shadow-[0_0_8px_#5f4fd8] top-50 right-20 w-[250px] lg:w-[550px] lg:relative lg:top-0 lg:right-0   lg:overflow-hidden"
+            className="absolute overflow-hidden drop-shadow-[0_0_8px_#5f4fd8] top-50 right-20 w-[250px] lg:w-[550px] lg:relative lg:top-0 lg:-right-10  lg:overflow-hidden"
           />
         </div>
 
