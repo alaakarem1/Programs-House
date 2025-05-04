@@ -26,7 +26,7 @@ export default function About() {
                     </div>
 
 
-                    <div className=" lg:w-1/2 text-white text-center lg:text-left lg:space-y-5 font-azonix ">
+                    <div className="flex flex-col lg:w-1/2 text-white text-center lg:text-left lg:space-y-5 font-azonix ">
                         <div className='lg:pl-9 lg:mt-10'>
                             <p className="uppercase text-2xl  lg:text-3xl  tracking-widest text-white lg:pb-4">AT</p>
                             <h2 className="text-3xl  font-bold">
@@ -57,9 +57,9 @@ export default function About() {
                                 backgroundPosition: "200% center",
                                 transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
                             }}
-                            className="relative mt-10 p-[2px] lg:inline-block lg:mt-20 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
+                            className="relative mt-10 p-[2px] self-center lg:inline-block lg:mr-30 w-fit lg:mt-20 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
                         >
-                            <button className="relative z-10 px-2 py-2 w-full h-full lg:px-6 lg:py-4 rounded-full bg-[#0B0896] flex items-center justify-center">
+                            <button className="relative z-10 px-3  py-2 w-fit h-full lg:px-6 lg:py-4 rounded-full bg-[#0B0896] flex items-center justify-center">
                                 <span className="font-nebula text-xl tracking-widest text-white">WHO WE ARE</span>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
