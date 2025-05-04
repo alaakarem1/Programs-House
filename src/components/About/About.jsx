@@ -6,44 +6,44 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <>
-            <section className="relative bg-back-ground w-full py-20 px-6 md:px-20 overflow-hidden">
+            <section className="relative bg-back-ground w-full py-20 px-6 md:px-20 ">
 
                 <img
                     src={shapeBg}
                     alt="shape background"
-                    className="absolute h-xl top-1/2 left-1/2 w-[80%] -translate-x-1/2 -translate-y-1/2 z-0"
+                    className="absolute top- left-1/2 w-[85%] -translate-x-1/2 -translate-y-1/2 z-0 lg:absolute lg:h-xl lg:top-1/2 lg:left-1/2 lg:w-[80%] lg:-translate-x-1/2 lg:-translate-y-1/2 lg:z-0"
                 />
 
 
-                <div className="relative z-10  mx-auto flex flex-col lg:flex-row items-center justify-between ">
+                <div className="relative z-10 flex flex-col lg:flex-row lg:items-center lg:justify-between ">
 
                     <div className=" flex">
                         <img
                             src={personImg}
                             alt="VR Person"
-                            className="w-[540px] pb-21 ml-22 "
+                            className="absolute  -translate-y-8/12 ml-2.5 mt-2 w-46  lg:w-[540px] lg:pt-33 lg:ml-18"
                         />
                     </div>
 
 
-                    <div className="w-full lg:w-1/2 text-white text-center lg:text-left space-y-5 font-azonix ">
-                        <div className='pl-9 mt-10'>
-                            <p className="uppercase text-3xl tracking-widest text-white pb-4">AT</p>
+                    <div className=" w-full lg:w-1/2 text-white text-center lg:text-left lg:space-y-5 font-azonix ">
+                        <div className='pl-25  lg:pl-9 lg:mt-10'>
+                            <p className="uppercase text-sm  lg:text-3xl  tracking-widest text-white lg:pb-4">AT</p>
                             <h2 className="text-3xl  font-bold">
-                                <span className=" text-transparent bg-clip-text bg-gradient-to-r bg-text-color text-5xl font-azonix font-normal ">
+                                <span className=" text-transparent text-sm bg-clip-text bg-gradient-to-r bg-text-color lg:text-5xl font-azonix font-normal ">
                                     PROGRAMS HOUSE
                                 </span>
                             </h2>
                         </div>
 
                         <div className=''>
-                            <p className=" text-gray-100 font-azonix font-normal text-xl ">
+                            <p className=" text-sm text-gray-100 font-azonix font-normal lg:text-xl ">
                                 WE KNOW THAT SUCCESS ISN’T JUST ABOUT IDEAS,
-                                <br />
+                                <br className='hidden lg:block'/>
                                 <br />
                                 IT’S ABOUT HAVING THE RIGHT SOFTWARE.
                             </p>
-                            <p className=" font-cairo text-gray-400  mx-auto pt-5 text-xl font-normal">
+                            <p className="hidden lg:font-cairo lg:text-gray-400 lg:block lg:mx-auto lg:pt-5 lg:text-xl lg:font-normal">
                                 We craft smart, scalable solutions that drive growth and turn
                                 <br />
                                 challenges into opportunities. With the right

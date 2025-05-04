@@ -15,22 +15,24 @@ export default function Hero() {
       <div className="relative z-10 flex flex-col lg:flex-row items-center w-full justify-around px-8 pt-7  ">
         {/* النصوص */}
         <div className=" lg:space-y-6 text-white">
-          <h1 className=" hero-title font-azonix text-4xl lg:text-8xl">WE BELIEVE</h1>
+          <h1 className=" hero-title font-azonix text-4xl lg:text-7xl lg:ml-7">
+            WE BELIEVE
+          </h1>
 
           {/* <h1 className="text-4xl md:text-5xl font-bold font-azonix ">
                         <span className="text-transparent  bg-clip-text bg-gradient-to-r from-orange-500 to-orange-300">WE</span>{' '}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2B448D] to-[#5DA4F6]">BELEVE</span>
                     </h1> */}
 
-          <p className="text-xl text-center  font-normal leading-relaxed font-azonix lg:text-5xl lg:text-left">
+          <p className="text-xl text-center  font-normal leading-relaxed font-azonix lg:text-4xl lg:pt-5 lg:ml-5 lg:text-left">
             THERE'S NO BAD{" "}
           </p>
-          <p className="text-xl text-center font-normal leading-relaxed font-azonix lg:text-5xl lg:ml-0">
+          <p className="text-xl text-center font-normal leading-relaxed font-azonix lg:ml-5 lg:text-4xl">
             BUSINESS, THERE'S BAD
           </p>
 
           <h1 className="text-4xl font-bold text-center lg:text-start">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r  from-[#FF6F00]  to-[#007BFF] font-azonix font-normal text-3xl text-center lg:text-6xl">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r  from-[#FF6F00]  to-[#007BFF] font-azonix font-normal text-3xl text-center lg:text-6xl lg:ml-5">
               DEVELPERS
             </span>
           </h1>
@@ -39,7 +41,7 @@ export default function Hero() {
               backgroundPosition: "200% center",
               transition: { duration: 2, repeat: Infinity, ease: "circInOut" },
             }}
-            className="relative inline-block ml-10 mt-100 p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-dis-btn via-btn-color to-btn-color lg:mt-20 lg:ml-36 lg:mx-14 lg:p-[2px]"
+            className="relative inline-block ml-7 mt-100 p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-dis-btn via-btn-color to-btn-color lg:mt-20 lg:ml-36 lg:mx-14 lg:p-[2px]"
           >
             <button className="relative z-10 px-4 py-1 w-full h-full rounded-full bg-dis-btn flex items-center justify-center lg:z-10 lg:px-7 lg:py-3 lg:relative lg:flex lg:items-center lg:justify-center">
               <span className="font-nebula text-sm tracking-widest text-white lg:text-xl">
@@ -76,16 +78,16 @@ export default function Hero() {
         </div>
 
         {/* الروبوت */}
-        <div className="z-10 overflow-hidden lg:relative lg:mr-25 lg:z-10 lg:overflow-hidden">
+        <div className="z-10 overflow-hidden lg:relative lg:mr-18 lg:z-10 lg:overflow-hidden">
           <img
             src={robotImg}
             alt="robot"
-            className="absolute overflow-hidden top-50 right-20 w-[250px] lg:w-[550px] drop-shadow-[0_0_8px_#5f4fd8] lg:overflow-hidden"
+            className="absolute overflow-hidden drop-shadow-[0_0_8px_#5f4fd8] top-50 right-20 w-[250px] lg:w-[550px] lg:relative lg:top-0 lg:right-0   lg:overflow-hidden"
           />
         </div>
 
         {/* النص الثابت */}
-        <div className="text-xl absolute right-15 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none lg:absolute lg:right-25 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
+        <div className="text-xl absolute right-13 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none lg:absolute lg:right-20 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
           <p>FOR</p>
           <p>EVERY</p>
           <p>BUSINESS</p>
@@ -95,7 +97,7 @@ export default function Hero() {
         src={vectorImg}
         alt=""
         style={{ justifySelf: "anchor-center" }}
-        className="hidden lg:absolute lg:bottom-0  lg:w-96 lg:z-60 lg:right-0.5 lg:block"
+        className="hidden lg:absolute lg:bottom-0 lg:w-96 lg:z-60 lg:right-0.5 lg:block"
       />
     </div>
   );

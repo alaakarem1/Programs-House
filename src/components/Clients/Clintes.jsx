@@ -45,11 +45,11 @@ export default function Clintes() {
   return (
     <>
       <section className="bg-[#02021E] py-20 text-white text-center">
-        <h2 className="text-6xl font-normal leading-relaxed font-azonix">
+        <h2 className="text-4xl lg:text-6xl font-normal leading-relaxed font-azonix">
           TRUSTED BY
         </h2>
         <h2>
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F00] to-[#007BFF] font-azonix font-normal text-6xl">
+          <span className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F00] to-[#007BFF] font-azonix font-normal lg:text-6xl">
             LEADING BUSINESSES
           </span>
         </h2>
