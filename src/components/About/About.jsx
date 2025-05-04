@@ -57,7 +57,7 @@ export default function About() {
                                 backgroundPosition: "200% center",
                                 transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
                             }}
-                            className="relative mt-10 mx-20 p-[2px] lg:inline-block lg:mt-20 lg:mx-14 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
+                            className="relative mt-10 p-[2px] lg:inline-block lg:mt-20 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
                         >
                             <button className="relative z-10 px-2 py-2 w-full h-full lg:px-6 lg:py-4 rounded-full bg-[#0B0896] flex items-center justify-center">
                                 <span className="font-nebula text-xl tracking-widest text-white">WHO WE ARE</span>
