@@ -170,7 +170,7 @@ export default function Clintes() {
                             <img
                               src={client.src}
                               alt={client.name}
-                              className="w-24 h-24 mx-auto object-contain transition-transform duration-500 hover:scale-110"
+                              className="w-24 h-24 mx-auto object-contain transition-transform duration-500 hover:scale-110 active:scale-110"
                             />
                             <p
                               className={`font-inter font-medium text-sm mt-2 text-[#FFFFFF99] transition-all duration-300 ease-in-out  w-full text-center ${
