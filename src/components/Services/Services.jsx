@@ -91,7 +91,7 @@ function ServicesContent({ isHovered, setIsHovered }) {
                 alt={service.title}
                 className="w-8 h-8 lg:w-12 lg:h-12"
               />
-              <div className="w-8 h-8 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white group-hover:bg-black group-hover:text-white active:bg-black active:text-white transition-all duration-500">
+              <div className="w-8 h-8 lg:w-12 lg:h-12 flex items-center justify-center rounded-full bg-white group-hover:bg-black group-hover:text-white group-active:bg-black group-active:text-white transition-all duration-500">
                 <FiArrowUpRight className="text-xl lg:text-3xl" />
               </div>
               <h2 className="text-md pl-2 lg:text-3xl font-normal lg:pl-5 font-alex">
