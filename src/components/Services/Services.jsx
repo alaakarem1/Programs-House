@@ -80,7 +80,7 @@ function ServicesContent({ isHovered, setIsHovered }) {
         {services.map((service, index) => (
           <div
             key={index}
-            className="group  lg:px-16 group bg-gray-100 py-5 px-16 rounded-3xl border border-gray-300 
+            className="group  group bg-gray-100 lg:py-5 lg:px-16 rounded-3xl border border-gray-300 
              hover:shadow-[-20px_20px_4px_rgba(0,0,0,3)] hover:-translate-y-2
              active:shadow-[-20px_20px_4px_rgba(0,0,0,3)] active:-translate-y-2
              transition-all duration-500 ease-in-out transform"
