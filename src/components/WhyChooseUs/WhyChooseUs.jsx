@@ -101,7 +101,7 @@ function WhyChooseUs() {
           </div>
 
           {/* الكارت 2 */}
-          <div className="flex flex-col bg-[url(/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-64 h-[400px] lg:w-80">
+          <div className="flex flex-col bg-[url(/assets/card-2.png)] -mt-5 p-6 pt-5 bg-contain bg-no-repeat w-64 h-[400px] lg:w-80">
             <div className="text-2xl mx-auto my-6 lg:pt-20 lg:pb-7">
               <img src={fifty} alt="" />
             </div>
