@@ -76,14 +76,14 @@ function ServicesContent({ isHovered, setIsHovered }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 pt-3 md:grid-cols-2 gap-8 max-w-4xl lg:w-full lg:max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1  pt-3 md:grid-cols-2 gap-8 max-w-4xl lg:w-full lg:max-w-6xl mx-auto ">
         {services.map((service, index) => (
           <div
             key={index}
-            className="group  group bg-gray-100 lg:py-5 lg:px-16 rounded-3xl border border-gray-300 
+            className="group bg-gray-100 lg:py-5 lg:px-16 rounded-3xl border border-gray-300 
              hover:shadow-[-20px_20px_4px_rgba(0,0,0,3)] hover:-translate-y-2
              active:shadow-[-20px_20px_4px_rgba(0,0,0,3)] active:-translate-y-2
-             transition-all duration-500 ease-in-out transform"
+             transition-all duration-500 ease-in-out transform py-2"
           >
             <div className="flex items-center gap-1 mb-4 pl-5 lg:pl-0">
               <img
