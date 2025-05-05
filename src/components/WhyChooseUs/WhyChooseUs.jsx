@@ -16,17 +16,17 @@ const paragraphs = [
 function WhyChooseUs() {
   const [currentSlide, setCurrentSlide] = useState(0);
   return (
-    <section className="min-h-screen bg-gradient-to-b from-[#02021E] via-[#281D24] to-[#EDA93F] border-bottom py-28 px-6  rounded-b-3xl">
+    <section className="min-h-screen bg-gradient-to-b from-[#080820] via-[#281D24] to-[#EDA93F] border-bottom lg:py-28 px-4 lg:px-6  rounded-b-3xl">
       <div className="max-w-7xl mx-auto text-center">
         {/* Title */}
-        <h2 className="text-4xl leading-[1.25] md:text-8xl font-normal text-white font-glitch text-left  ">
+        <h2 className="text-4xl leading-[1.25] md:text-8xl font-normal text-white font-glitch lg:text-left  ">
           <span className="text-[#FF6F00]">WHY </span>
           <br />
           <span className="text-white">BUSINESSES </span>
           <br />
           <span className="text-[#007BFF]">CHOOSE US</span>
         </h2>
-        <div className="flex flex-col md:flex-row items- justify-center gap-16 pt-28">
+        <div className="flex flex-col md:flex-row pt-10 items-center justify-center gap-16 lg:pt-28">
           {/* الكارت الأبيض */}
           <div className="relative w-80 h-[500px] flex items-center justify-center">
             {/* صورة الخلفية */}
@@ -85,7 +85,7 @@ function WhyChooseUs() {
           </div>
 
           {/* الكارت 1 */}
-          <div className="flex flex-col bg-[url(/assets/card1.png)] p-6 bg-contain bg-no-repeat w-80 ">
+          <div className="flex flex-col bg-[url(/assets/card1.png)] p-6 bg-contain bg-no-repeat w-64 h-[400px] lg:w-80 lg:h-auto ">
             <div className="text-2xl mx-auto">
               <img src={hands} alt="" />
             </div>
@@ -94,14 +94,14 @@ function WhyChooseUs() {
             <h3 className="text-2xl font-bold mb-2 mx-auto text-white font-cairo ">
               Trusted Partners
             </h3>
-            <p className=" text-white font-cairo font-thin text-md  pt-6 text-left pl-5 ">
+            <p className=" text-white font-cairo font-thin text-md  pt-2 text-left pl-5 ">
               Businesses across industries rely on us not just for software, but
               for strategic tech partnerships that drive long-term success.
             </p>
           </div>
 
           {/* الكارت 2 */}
-          <div className="flex flex-col bg-[url(/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-80">
+          <div className="flex flex-col bg-[url(/assets/card-2.png)] p-6 pt-5 bg-contain bg-no-repeat w-64 h-[400px] lg:w-80">
             <div className="text-2xl mx-auto pt-20 pb-7">
               <img src={fifty} alt="" />
             </div>
@@ -117,7 +117,7 @@ function WhyChooseUs() {
 
           {/* الكارت 3 */}
           <div
-            className="flex flex-col bg-[url(/assets/card3.png)] p-6 bg-contain bg-no-repeat w-80 "
+            className="flex flex-col bg-[url(/assets/card3.png)] p-6 bg-contain bg-no-repeat w-64 h-[400px] lg:w-80 "
             style={{
               clipPath: "polygon(0 0, 85% 0, 100% 15%, 100% 100%, 0 100%)",
             }}
