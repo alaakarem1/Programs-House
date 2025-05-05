@@ -22,7 +22,7 @@ export default function Text2() {
             {" "}
             BUSINESSES
           </span>
-          <span className="font-azonix text-lg max-w-xl lg:text-2xl font-normal lg:text-left">
+          <span className="font-azonix text-lg lg:text-2xl font-normal lg:text-left">
             , WE'VE EMPOWERED OUR CLIENTS TO ACHIEVE THEIR GOALS— AND THEIR
             SUCCESS STORIES ARE OUR GREATEST REWARD
           </span>

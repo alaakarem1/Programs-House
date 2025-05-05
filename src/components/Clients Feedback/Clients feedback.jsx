@@ -71,27 +71,27 @@ export default function Clients_feedback() {
 
   return (
     <>
-      <section className="bg-[#080820] py-16 px-12">
-        <div className="container mx-auto px-6 flex flex-row items-center gap-10">
+      <section className="bg-[#080820] py-28 lg:py-16 lg:px-12">
+        <div className="container lg:mx-auto lg:px-6 px-4 flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-10">
           {/* Left Side */}
-          <div className="flex flex-col items-start max-w-sm">
-            <h2 className="text-4xl text-white font-normal font-azonix">4.9</h2>
+          <div className="flex flex-col items-center lg:items-start lg:max-w-sm">
+            <h2 className="text-3xl lg:text-4xl text-white font-normal font-azonix">4.9</h2>
             <p className="text-white font-cairo text-2xl font-normal mt-5">
               Our clients’ satisfaction isn’t just a goal — it’s the standard we
               set for every project we deliver
             </p>
-            <div className="flex gap-14 mt-18 mx-auto">
+            <div className="hidden lg:flex gap-6 mt-5 lg:gap-14 lg:mt-18 mx-auto">
               <button
                 onClick={handlePrev}
-                className="w-14 h-14  flex items-center justify-center rounded-full border-2 border-white text-white  "
+                className="w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white  "
               >
-                <img src={arrow1}  alt="" />
+                <img src={arrow1}  alt="" className="w-3 lg:w-5"/>
               </button>
               <button
                 onClick={handleNext}
-                className="w-14 h-14 flex items-center justify-center rounded-full border-2 border-white text-white "
+                className="w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white "
               >
-                <img src={arrow2} alt="" />
+                <img src={arrow2} alt=""  className="w-3 lg:w-5"/>
               </button>
             </div>
           </div>
