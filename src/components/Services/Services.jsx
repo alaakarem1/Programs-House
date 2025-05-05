@@ -98,7 +98,7 @@ function ServicesContent({ isHovered, setIsHovered }) {
                 {service.title}
               </h2>
             </div>
-            <p className="text-gray-600 text-sm  pl-5 lg:text-xl lg:pl-32 font-poppin font-light">
+            <p className="text-gray-600 text-sm  px-5 lg:text-xl lg:pl-32 font-poppin font-light">
               {service.description}
             </p>
           </div>
