@@ -22,7 +22,7 @@ export default function Card({
             ))}
           </div>
         </div>
-        <hr className="border-white my-4 lg:my-6" />
+        <hr className="border-white w-55 lg:w-auto my-4 lg:my-6" />
         <p className="text-white text-md lg:text-xl leading-relaxed font-cairo lg:mt-4">
           {text}
         </p>
