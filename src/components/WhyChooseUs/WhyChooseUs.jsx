@@ -94,7 +94,7 @@ function WhyChooseUs() {
             <h3 className="text-2xl font-bold mb-2 mx-auto text-white font-cairo ">
               Trusted Partners
             </h3>
-            <p className=" text-white font-cairo font-thin text-md  pt-2 text-left pl-5 ">
+            <p className=" text-white font-cairo font-thin text-lg  pt-2 text-left pl-5 ">
               Businesses across industries rely on us not just for software, but
               for strategic tech partnerships that drive long-term success.
             </p>
@@ -106,10 +106,10 @@ function WhyChooseUs() {
               <img src={fifty} alt="" />
             </div>
             <hr className="border-white my-6" />
-            <h4 className="text-2xl font-bold mb-2 mx-auto text-white font-cairo  ">
+            <h4 className="text-xl font-bold mb-2 mx-auto text-white font-cairo  ">
               Completed Projects
             </h4>
-            <p className="text-white font-cairo font-thin text-md pt-6  text-left">
+            <p className="text-white font-cairo font-thin text-lg pt-6  text-left">
               Every project we deliver is built with precision, creativity, and
               a deep understanding of each client’s unique goals.
             </p>
@@ -129,7 +129,7 @@ function WhyChooseUs() {
             <h3 className="text-2xl font-bold mb-2 mx-auto text-white font-cairo ">
               Positive Vibes
             </h3>
-            <p className="text-white font-cairo font-thin text-md  pt-3 text-left pl-3">
+            <p className="text-white font-cairo font-thin text-lg  pt-3 text-left pl-3">
               We make technology simple, delivering smart solutions through a
               smooth, collaborative, and friendly process.
             </p>
