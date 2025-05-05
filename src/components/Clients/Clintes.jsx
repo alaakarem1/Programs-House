@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState , useEffect  } from "react";
 import MSE from "../../assets/MSE.png";
 import Dolphine from "../../assets/Dolphine.png";
 import Medical from "../../assets/Medical Islands.png";
@@ -40,7 +40,31 @@ const clients = [
   },
   { src: planet, name: "+50 Clients Worldwide" },
 ];
+
+function chunkArray(arr, size) {
+  const result = [];
+  for (let i = 0; i < arr.length; i += size) {
+    result.push(arr.slice(i, i + size));
+  }
+  return result;
+}
 export default function Clintes() {
+  const [colsPerRow, setColsPerRow] = useState(4); // الافتراضي 4 أعمدة
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 1024) {
+        setColsPerRow(2); // للموبايل
+      } else {
+        setColsPerRow(4); // للشاشات الكبيرة
+      }
+    };
+
+    handleResize(); // شغّله عند أول تحميل
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <>
@@ -56,52 +80,7 @@ export default function Clintes() {
 
         <div className="overflow-x-auto py-16 px-4">
           <table className="table-auto border-separate border-spacing-0 w-full max-w-6xl mx-auto">
-            <tbody>
-              {/* {[0, 1].map((row) => (
-                                <tr key={row} className=''>
-                                    {[0, 1, 2, 3].map((col) => {
-                                        const index = row * 4 + col;
-                                        const client = clients[index]; */}
-              {/* {[0, 1].map((row) => (
-                                <tr key={row}>
-                                    {[0, 1, 2, 3].map((col) => {
-                                        const index = row * 4 + col;
-                                        const client = clients[index];
-
-                                        const isFirstRow = row === 0;
-                                        const isFirstCol = col === 0;
-                                        return (
-                                            <td
-                                                key={index}
-                                                // className=" border-t border-l  border-gray-700 text-center align-middle w-[200px] h-[180px] px-4 py-6"
-                                                className={`text-center align-middle w-[200px] h-[180px] px-4 py-6
-                                                    ${!isFirstRow ? 'border-t-2 border-[#282840]' : ''}
-                                                    ${!isFirstCol ? 'border-l-2 border-[#282840]' : ''}
-                                                  `}
-                                                // onMouseEnter={() => setHoveredIndex(index)}
-                                                // onMouseLeave={() => setHoveredIndex(null)}
-                                                onMouseEnter={() => {
-                                                    if (index !== 7) setHoveredIndex(index);
-                                                }}
-                                                onMouseLeave={() => {
-                                                    if (index !== 7) setHoveredIndex(null);
-                                                }}
-                                            >
-
-                                                <img
-                                                    src={client.src}
-                                                    alt={client.name}
-                                                    className="w-24 h-24 mx-auto object-contain transition-transform duration-300 hover:scale-110"
-                                                />
-                                                {hoveredIndex === index && (
-                                                    <p className="font-inter font-medium text-sm mt-2 text-[#FFFFFF99] ">{client.name}</p>
-                                                )}
-
-                                            </td>
-                                        );
-                                    })}
-                                </tr>
-                            ))} */}
+            {/* <tbody>
               {[0, 1].map((row) => (
                 <tr key={row}>
                   {[0, 1, 2, 3].map((col) => {
@@ -129,6 +108,58 @@ export default function Clintes() {
                               src={client.src}
                               alt={client.name}
                               className=" mx-auto object-contain py-3"
+                            />
+                            <p className="font-inter font-medium text-lg mt-3 text-white">
+                              {client.name}
+                            </p>
+                          </>
+                        ) : (
+                          <>
+                            <img
+                              src={client.src}
+                              alt={client.name}
+                              className="w-24 h-24 mx-auto object-contain transition-transform duration-300 hover:scale-110"
+                            />
+                            {hoveredIndex === index && (
+                              <p className="font-inter font-medium text-sm mt-2 text-[#FFFFFF99]">
+                                {client.name}
+                              </p>
+                            )}
+                          </>
+                        )}
+                      </td>
+                    );
+                  })}
+                </tr>
+              ))}
+            </tbody> */}
+            <tbody>
+              {chunkArray(clients, colsPerRow).map((row, rowIndex) => (
+                <tr key={rowIndex}>
+                  {row.map((client, colIndex) => {
+                    const index = rowIndex * colsPerRow + colIndex;
+                    const isFirstRow = rowIndex === 0;
+                    const isFirstCol = colIndex === 0;
+
+                    return (
+                      <td
+                        key={index}
+                        className={`text-center align-middle w-[300px] h-[200px] px-4 
+              ${!isFirstRow ? "border-t-2 border-[#282840]" : ""}
+              ${!isFirstCol ? "border-l-2 border-[#282840]" : ""}`}
+                        onMouseEnter={() => {
+                          if (index !== 7) setHoveredIndex(index);
+                        }}
+                        onMouseLeave={() => {
+                          if (index !== 7) setHoveredIndex(null);
+                        }}
+                      >
+                        {index === 7 ? (
+                          <>
+                            <img
+                              src={client.src}
+                              alt={client.name}
+                              className="mx-auto object-contain py-3"
                             />
                             <p className="font-inter font-medium text-lg mt-3 text-white">
                               {client.name}
