@@ -1,5 +1,5 @@
 import React from "react";
-import { useState , useEffect  } from "react";
+import { useState, useEffect } from "react";
 import MSE from "../../assets/MSE.png";
 import Dolphine from "../../assets/Dolphine.png";
 import Medical from "../../assets/Medical Islands.png";
@@ -166,18 +166,22 @@ export default function Clintes() {
                             </p>
                           </>
                         ) : (
-                          <>
+                          <div className="">
                             <img
                               src={client.src}
                               alt={client.name}
-                              className="w-24 h-24 mx-auto object-contain transition-transform duration-300 hover:scale-110"
+                              className="w-24 h-24 mx-auto object-contain transition-transform duration-500 hover:scale-110"
                             />
-                            {hoveredIndex === index && (
-                              <p className="font-inter font-medium text-sm mt-2 text-[#FFFFFF99]">
-                                {client.name}
-                              </p>
-                            )}
-                          </>
+                            <p
+                              className={`font-inter font-medium text-sm mt-2 text-[#FFFFFF99] transition-all duration-300 ease-in-out  w-full text-center ${
+                                hoveredIndex === index
+                                  ? "opacity-100 translate-y-0"
+                                  : "opacity-0 -translate-y-2 pointer-events-none"
+                              }`}
+                            >
+                              {client.name}
+                            </p>
+                          </div>
                         )}
                       </td>
                     );
