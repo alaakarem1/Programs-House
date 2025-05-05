@@ -166,11 +166,16 @@ export default function Clintes() {
                             </p>
                           </>
                         ) : (
-                          <div className="">
+                          <div className="group">
                             <img
                               src={client.src}
                               alt={client.name}
-                              className="w-24 h-24 mx-auto object-contain transition-transform duration-500 hover:scale-110 active:scale-110"
+                              className={`w-24 h-24 mx-auto object-contain transition-transform duration-500 group-hover:scale-110 group-active:scale-110
+                                ${
+                                  hoveredIndex === index
+                                    ? "translate-y-0"
+                                    : "translate-y-1/2"
+                                }`}
                             />
                             <p
                               className={`font-inter font-medium text-sm mt-2 text-[#FFFFFF99] transition-all duration-300 ease-in-out  w-full text-center ${
