@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function About() {
     return (
         <>
-            <section className="relative bg-back-ground w-full lg:py-20 px-6 md:px-20 ">
+            <section id='whoWeAre' className="relative bg-back-ground w-full lg:py-20 px-6 md:px-20 ">
 
                 <img
                     src={shapeBg}
@@ -52,6 +52,7 @@ export default function About() {
                                 just possible — it’s inevitable."
                             </p>
                         </div>
+                        <a href="#WhoWeAreBtn" className='mx-auto'>
                         <motion.div
                             whileHover={{
                                 backgroundPosition: "200% center",
@@ -76,6 +77,8 @@ export default function About() {
                                 </svg>
                             </button>
                         </motion.div>
+                        </a>
+
 
                         {/* <button className="mt-20 px-3 py-4 rounded-full bg-[#0B0896] border border-white  flex items-center  justify-center mx-14">
                             <span className="font-nebula text-xl tracking-widest text-white">WHO WE ARE</span>

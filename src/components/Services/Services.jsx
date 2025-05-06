@@ -36,7 +36,7 @@ const services = [
 
 function ServicesContent({ isHovered, setIsHovered }) {
   return (
-    <>
+    <div id="">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center ">
         <div className="lg:w-full">
           <h1 className="text-5xl lg:text-[130px] font-normal font-glitch relative">
@@ -48,31 +48,37 @@ function ServicesContent({ isHovered, setIsHovered }) {
         </div>
 
         <div className="relative mx-auto pt-5 lg:pt-8 lg:right-10 md:mt-0 flex-shrink-0 transition-all duration-300 ease-in-out">
-          <button
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            className="relative  lg:w-52 lg:h-[300px] transition-all duration-300 ease-in-out animate-spin-slow"
+          <a
+            href="https://wa.me/201070101091"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <img
-              src={isHovered ? textButton2 : textButton}
-              alt=""
-              className="w-32 lg:w-52 transition-all duration-300 ease-in-out"
-            />
-            <img
-              src={textButton}
-              alt=""
-              className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out ${
-                isHovered ? "opacity-0" : "opacity-100"
-              }`}
-            />
-            <img
-              src={textButton2}
-              alt=""
-              className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out ${
-                isHovered ? "opacity-100" : "opacity-0"
-              }`}
-            />
-          </button>
+            <button
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="relative  lg:w-52 lg:h-[300px] transition-all duration-300 ease-in-out animate-spin-slow"
+            >
+              <img
+                src={isHovered ? textButton2 : textButton}
+                alt=""
+                className="w-32 lg:w-52 transition-all duration-300 ease-in-out"
+              />
+              <img
+                src={textButton}
+                alt=""
+                className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out ${
+                  isHovered ? "opacity-0" : "opacity-100"
+                }`}
+              />
+              <img
+                src={textButton2}
+                alt=""
+                className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out ${
+                  isHovered ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            </button>
+          </a>
         </div>
       </div>
 
@@ -104,7 +110,7 @@ function ServicesContent({ isHovered, setIsHovered }) {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 
@@ -115,7 +121,9 @@ function ServicesSection() {
     <div className="relative bg-back-ground min-h-screen flex flex-col items-center justify-start pt-30">
       <div className="absolute -top--80 lg:left-1/4 transform lg:-translate-x-1/3 font-glitch uppercase">
         <h1 className="text-5xl lg:text-[140px] font-normal leading-[0.9] relative">
-          <span className="block text-white relative">OUR</span>
+          <span id="services" className="block text-white relative">
+            OUR
+          </span>
         </h1>
       </div>
 

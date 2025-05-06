@@ -27,13 +27,19 @@ export default function Navbar() {
 
           {/* Desktop menu */}
           <ul className="hidden md:flex items-center gap-10 text-white font-semibold">
-            <a className="cursor-pointer hover:text-nav-color transition font-cairo">
+            <a
+              className="cursor-pointer hover:text-nav-color transition font-cairo"
+              href="#whoWeAre"
+            >
               Who we are
             </a>
             <div className="hover:text-nav-color">
-              <a className="relative group cursor-pointer transition flex items-center gap-1 font-cairo">
+              <a
+                className="relative group cursor-pointer transition flex items-center gap-1 font-cairo"
+                href="#services"
+              >
                 Our Services
-                <svg
+                {/* <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="w-4 h-4 fill-current"
                   viewBox="0 0 20 20"
@@ -43,38 +49,51 @@ export default function Navbar() {
                     d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z"
                     clipRule="evenodd"
                   />
-                </svg>
+                </svg> */}
               </a>
             </div>
-            <a className="cursor-pointer hover:text-nav-color transition font-cairo">
+            <a
+              className="cursor-pointer hover:text-nav-color transition font-cairo"
+              href="#projects"
+            >
               Projects
             </a>
           </ul>
 
           {/* Contact button (desktop only) */}
-          <motion.div
-            whileHover={{
-              backgroundPosition: "200% center",
-              transition: { duration: 2, repeat: Infinity, ease: "easeInOut" },
-            }}
-            className="hidden md:inline-block p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
+          <a
+            href="https://wa.me/201070101091"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <button className="flex items-center gap-5 bg-btn text-white font-alex py-2 px-5 rounded-full">
-              Contact Us
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="30"
-                viewBox="0 0 40 40"
-                fill="none"
-              >
-                <circle cx="20" cy="20" r="20" fill="white" />
-                <foreignObject x="6" y="6" width="28" height="28">
-                  <img src={Rocket} alt="icon" className="w-full h-full" />
-                </foreignObject>
-              </svg>
-            </button>
-          </motion.div>
+            <motion.div
+              whileHover={{
+                backgroundPosition: "200% center",
+                transition: {
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                },
+              }}
+              className="hidden md:inline-block p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
+            >
+              <button className="flex items-center gap-5 bg-btn text-white font-alex py-2 px-5 rounded-full">
+                Contact Us
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                >
+                  <circle cx="20" cy="20" r="20" fill="white" />
+                  <foreignObject x="6" y="6" width="28" height="28">
+                    <img src={Rocket} alt="icon" className="w-full h-full" />
+                  </foreignObject>
+                </svg>
+              </button>
+            </motion.div>
+          </a>
         </nav>
 
         {/* Mobile menu */}
@@ -88,7 +107,6 @@ export default function Navbar() {
               transition={{ duration: 0.3 }}
               className=" md:hidden mt-4 flex flex-col gap-4 text-white font-semibold items-center text-center"
             >
-        
               <div className="md:hidden mt-4 flex flex-col gap-4 text-white font-semibold items-center text-center">
                 <a className="cursor-pointer hover:text-nav-color transition font-cairo">
                   Who we are

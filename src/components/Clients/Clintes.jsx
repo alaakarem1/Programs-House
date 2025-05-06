@@ -68,7 +68,7 @@ export default function Clintes() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <>
-      <section className="bg-[#02021E] py-20 text-white text-center">
+      <section id="projects" className="bg-[#02021E] py-20 text-white text-center">
         <h2 className="text-4xl lg:text-6xl font-normal leading-relaxed font-azonix">
           TRUSTED BY
         </h2>

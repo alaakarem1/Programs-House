@@ -36,32 +36,39 @@ export default function Hero() {
               DEVELPERS
             </span>
           </h1>
-          <motion.div
-            whileHover={{
-              backgroundPosition: "200% center",
-              transition: { duration: 2, repeat: Infinity, ease: "circInOut" },
-            }}
-            className="relative inline-block ml-7 mt-100 p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-dis-btn via-btn-color to-btn-color lg:mt-20 lg:ml-36 lg:mx-14 lg:p-[2px]"
-          >
-            <button className="relative z-10 px-4 py-1 w-full h-full rounded-full bg-dis-btn flex items-center justify-center lg:z-10 lg:px-7 lg:py-3 lg:relative lg:flex lg:items-center lg:justify-center">
-              <span className="font-nebula text-sm tracking-widest text-white lg:text-xl">
-                DISCOVER NOW
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                className="ml-2 lg:ml-4"
-              >
-                <circle cx="20" cy="20" r="20" fill="white" />
-                <foreignObject x="6" y="6" width="28" height="28">
-                  <img src={Rocket} alt="icon" className="w-full h-full" />
-                </foreignObject>
-              </svg>
-            </button>
-          </motion.div>
+          <a href="#discover">
+            <motion.div
+              whileHover={{
+                backgroundPosition: "200% center",
+                transition: {
+                  duration: 2,
+                  repeat: Infinity,
+                  ease: "circInOut",
+                },
+              }}
+              className="relative inline-block ml-7 mt-100 p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-dis-btn via-btn-color to-btn-color lg:mt-20 lg:ml-36 lg:mx-14 lg:p-[2px]"
+            >
+              <button className="relative z-10 px-4 py-1 w-full h-full rounded-full bg-dis-btn flex items-center justify-center lg:z-10 lg:px-7 lg:py-3 lg:relative lg:flex lg:items-center lg:justify-center">
+                <span className="font-nebula text-sm tracking-widest text-white lg:text-xl">
+                  DISCOVER NOW
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  className="ml-2 lg:ml-4"
+                >
+                  <circle cx="20" cy="20" r="20" fill="white" />
+                  <foreignObject x="6" y="6" width="28" height="28">
+                    <img src={Rocket} alt="icon" className="w-full h-full" />
+                  </foreignObject>
+                </svg>
+              </button>
+            </motion.div>
+          </a>
+
           {/* <button className="mt-20 px-7 py-3 ml-36 font-nebula text-2xl rounded-full bg-dis-btn text-white border-2  flex  items-center gap-2 ">
                         DISCOVER NOW
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" className='ml-4'>

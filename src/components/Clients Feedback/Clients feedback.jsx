@@ -71,7 +71,7 @@ export default function Clients_feedback() {
 
   return (
     <>
-      <section className="bg-[#080820] py-28 lg:py-16 lg:px-12">
+      <section id="clientReview" className="bg-[#080820] py-28 lg:py-16 lg:px-12">
         <div className="container lg:mx-auto lg:px-6 px-4 flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-10">
           {/* Left Side */}
           <div className="flex flex-col items-center lg:items-start lg:max-w-sm">

@@ -92,3 +92,34 @@
     100% { transform: rotate(360deg); }
   }
 }
+
+@layer utilities {
+  @keyframes glitch {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 0);
+    }
+    40% {
+      transform: translate(2px, 0);
+    }
+    60% {
+      transform: translate(-1px, 0);
+    }
+    80% {
+      transform: translate(1px, 0);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+
+  .animate-glitch {
+    animation: glitch 300ms infinite;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
