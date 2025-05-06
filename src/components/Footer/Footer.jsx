@@ -29,7 +29,10 @@ function Footer() {
                 >
                   <FaFacebook className="hover:text-[#0866FF] active:text-[#0866FF] transition-colors duration-300" />
                 </a>
-                <a href="https://www.messenger.com/t/538162776041725" target="_blank">
+                <a
+                  href="https://www.messenger.com/t/538162776041725"
+                  target="_blank"
+                >
                   <FaFacebookMessenger className="hover:text-[#4da3ff] active:text-[#4da3ff] transition-colors duration-300" />
                 </a>
               </div>
@@ -37,40 +40,40 @@ function Footer() {
 
             <div className="flex flex-row gap-5 lg:gap-8 lg:pr-10 text-sm text-white justify-between lg:items-center ">
               {/* Mail Section */}
-              <div className="flex flex-col lg:items-center md:items-start text-center md:text-left font-cairo">
-                <div className="flex items-center gap-3">
-                  <img
-                    src="/assets/message.gif"
-                    alt="mail"
-                    className="w-6 lg:w-10 lg:h-10 rounded-full"
-                  />
-                  <span className=" lg:text-lg text-gray-300">
-                    Drop us a mail
-                  </span>
-                </div>
-                <a href="mailto:contact@programshouse.com" target="__blank">
+              <a href="mailto:contact@programshouse.com" target="__blank">
+                <div className="flex flex-col lg:items-center md:items-start text-center md:text-left font-cairo">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src="/assets/message.gif"
+                      alt="mail"
+                      className="w-6 lg:w-10 lg:h-10 rounded-full"
+                    />
+                    <span className=" lg:text-lg text-gray-300">
+                      Drop us a mail
+                    </span>
+                  </div>
                   <span className="mt-1 lg:text-lg">
                     contact@programshouse.com
                   </span>
-                </a>
-              </div>
+                </div>
+              </a>
 
               {/* Call Section */}
-              <div className="flex flex-col lg:items-center md:items-start text-center md:text-left">
-                <div className="flex items-center gap-3">
-                  <img
-                    src="/assets/call.gif"
-                    alt="call"
-                    className="w-6 lg:w-10 lg:h-10 rounded-full"
-                  />
-                  <span className="font-cairo lg:text-lg text-gray-300">
-                    Call Us
-                  </span>
-                </div>
-                <a href="tel:201070101091">
+              <a href="tel:201070101091">
+                <div className="flex flex-col lg:items-center md:items-start text-center md:text-left">
+                  <div className="flex items-center gap-3">
+                    <img
+                      src="/assets/call.gif"
+                      alt="call"
+                      className="w-6 lg:w-10 lg:h-10 rounded-full"
+                    />
+                    <span className="font-cairo lg:text-lg text-gray-300">
+                      Call Us
+                    </span>
+                  </div>
                   <span className="mt-1 lg:text-lg">(+20) 10 7010 1091</span>
-                </a>
-              </div>
+                </div>
+              </a>
             </div>
           </div>
         </div>
