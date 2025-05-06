@@ -28,12 +28,12 @@ export default function Navbar() {
           {/* Desktop menu */}
           <ul className="hidden md:flex items-center gap-10 text-white font-semibold">
             <a
-              className="cursor-pointer hover:text-nav-color transition font-cairo"
+              className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
               href="#whoWeAre"
             >
               Who we are
-            </a>
-            <div className="hover:text-nav-color">
+            </a> 
+            <div className="hover:text-nav-color active:text-nav-color">
               <a
                 className="relative group cursor-pointer transition flex items-center gap-1 font-cairo"
                 href="#services"
@@ -53,7 +53,7 @@ export default function Navbar() {
               </a>
             </div>
             <a
-              className="cursor-pointer hover:text-nav-color transition font-cairo"
+              className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
               href="#projects"
             >
               Projects
