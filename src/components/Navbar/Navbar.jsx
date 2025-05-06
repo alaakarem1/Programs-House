@@ -9,14 +9,14 @@ export default function Navbar() {
   return (
     <div className=" bg-back-ground py-6">
       <div className="bg-back-ground py-4 px-4 lg:px-16 mx-16 shadow-md border-t-2 border-b-2 border-gray-100">
-        <nav className="flex justify-between items-center">
+        <nav className="flex relative justify-between items-center">
           {/* Logo */}
           <a href="#">
             <img src={Logo} alt="Logo" className="h-10" />
           </a>
 
           {/* Mobile toggle */}
-          <div className="md:hidden">
+          <div className=" md:hidden absolute right-0 ">
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-white text-2xl"
@@ -28,11 +28,11 @@ export default function Navbar() {
           {/* Desktop menu */}
           <ul className="hidden md:flex items-center gap-10 text-white font-semibold">
             <a
-              className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+              className=" cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
               href="#whoWeAre"
             >
               Who we are
-            </a> 
+            </a>
             <div className="hover:text-nav-color active:text-nav-color">
               <a
                 className="relative group cursor-pointer transition flex items-center gap-1 font-cairo"
@@ -108,46 +108,61 @@ export default function Navbar() {
               className=" md:hidden mt-4 flex flex-col gap-4 text-white font-semibold items-center text-center"
             >
               <div className="md:hidden mt-4 flex flex-col gap-4 text-white font-semibold items-center text-center">
-                <a className="cursor-pointer hover:text-nav-color transition font-cairo">
+                <a
+                  href="#whoWeAre"
+                  className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+                >
                   Who we are
                 </a>
-                <a className="cursor-pointer hover:text-nav-color transition font-cairo">
+                <a
+                  href="#services"
+                  className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+                >
                   Our Services
                 </a>
-                <a className="cursor-pointer hover:text-nav-color transition font-cairo">
+                <a
+                  href="#projects"
+                  className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+                >
                   Projects
                 </a>
-                <motion.div
-                  whileHover={{
-                    backgroundPosition: "200% center",
-                    transition: {
-                      duration: 2,
-                      repeat: Infinity,
-                      ease: "easeInOut",
-                    },
-                  }}
-                  className="inline-block p-[1px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white self-center"
+                <a
+                  href="https://wa.me/201070101091"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <button className="flex items-center gap-3 bg-btn text-white font-alex py-1.5 px-4 rounded-full text-sm ">
-                    Contact Us
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      viewBox="0 0 40 40"
-                      fill="none"
-                    >
-                      <circle cx="20" cy="20" r="20" fill="white" />
-                      <foreignObject x="6" y="6" width="28" height="28">
-                        <img
-                          src={Rocket}
-                          alt="icon"
-                          className="w-full h-full"
-                        />
-                      </foreignObject>
-                    </svg>
-                  </button>
-                </motion.div>
+                  <motion.div
+                    whileHover={{
+                      backgroundPosition: "200% center",
+                      transition: {
+                        duration: 2,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                      },
+                    }}
+                    className="inline-block p-[1px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white self-center"
+                  >
+                    <button className="flex items-center gap-3 bg-btn text-white font-alex py-1.5 px-4 rounded-full text-sm ">
+                      Contact Us
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="30"
+                        height="30"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                      >
+                        <circle cx="20" cy="20" r="20" fill="white" />
+                        <foreignObject x="6" y="6" width="28" height="28">
+                          <img
+                            src={Rocket}
+                            alt="icon"
+                            className="w-full h-full"
+                          />
+                        </foreignObject>
+                      </svg>
+                    </button>
+                  </motion.div>
+                </a>
               </div>
             </motion.div>
           )}
