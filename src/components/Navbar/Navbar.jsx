@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <div className=" bg-back-ground py-6">
-      <div className="bg-back-ground py-4 px-4 lg:px-16 mx-16 shadow-md border-t-2 border-b-2 border-gray-100">
+      <div className="bg-back-ground py-4 px-4 mx-4 lg:px-16 lg:mx-16 shadow-md border-t-2 border-b-2  border-gray-100">
         <nav className="flex relative justify-between items-center">
           {/* Logo */}
           <a href="#">
@@ -105,7 +105,7 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className=" md:hidden mt-4 flex flex-col gap-4 text-white font-semibold items-center text-center"
+              className=" md:hidden mt-4 flex flex-col gap-4 text-white font-semibold absolute w-full bg-back-ground  z-50 left-0 items-center text-center"
             >
               <div className="md:hidden mt-4 flex flex-col gap-4 text-white font-semibold items-center text-center">
                 <a
@@ -164,6 +164,8 @@ export default function Navbar() {
                   </motion.div>
                 </a>
               </div>
+              <div className="w-[90%] border-t-2 "></div>
+
             </motion.div>
           )}
         </AnimatePresence>
