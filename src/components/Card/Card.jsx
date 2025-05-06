@@ -10,7 +10,7 @@ export default function Card({
 }) {
   return (
     <div
-      className="keen-slider__slide flex flex-col justify-between p-5 lg:p-10 rounded-2xl bg-cover bg-start relative mx-auto"
+      className="keen-slider__slide flex flex-col justify-between p-5 rounded-2xl bg-cover bg-start relative mx-auto"
       style={{ backgroundImage: `url(${backgroundImage})` }}
     >
       <div>
@@ -22,7 +22,7 @@ export default function Card({
             ))}
           </div>
         </div>
-        <hr className="border-white w-55 lg:w-auto my-4 lg:my-6" />
+        <hr className="border-white w-55 lg:w-68 my-4 lg:my-6" />
         <p className="text-white text-md lg:text-xl leading-relaxed font-cairo lg:mt-4">
           {text}
         </p>
