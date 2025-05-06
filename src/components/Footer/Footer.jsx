@@ -35,7 +35,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-row gap-5 lg:gap-8 lg:pr-10 text-sm text-white items-start lg:items-center ">
+            <div className="flex flex-row gap-5 lg:gap-8 lg:pr-10 text-sm text-white justify-between lg:items-center ">
               {/* Mail Section */}
               <div className="flex flex-col lg:items-center md:items-start text-center md:text-left font-cairo">
                 <div className="flex items-center gap-3">
