@@ -102,11 +102,11 @@ function WhyChooseUs() {
 
           {/* الكارت 2 */}
           <div className="flex flex-col bg-[url(/assets/card-2.png)] -mt-5 p-6 pt-5 bg-contain bg-no-repeat w-64 h-[400px] lg:w-80">
-            <div className="text-2xl mx-auto my-6 lg:pt-20 lg:pb-7">
+            <div className="text-2xl mx-auto my-6 lg:pt-15 lg:pb-5">
               <img src={fifty} alt="" />
             </div>
-            <hr className="border-white my-6" />
-            <h4 className="text-xl font-bold mb-2 mx-auto text-white font-cairo  ">
+            <hr className="border-white my-6 lg:my-0" />
+            <h4 className="text-xl font-bold mb-3 lg:mb-0 lg:pt-4 mx-auto text-white font-cairo  ">
               Completed Projects
             </h4>
             <p className="text-white font-cairo font-thin text-lg pt-6  text-left">

@@ -6,10 +6,10 @@ import vectorImg from "../../assets/Vector 1.png";
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <div className=" lg:relative lg:h-full lg:flex lg:px-8 bg-back-ground ">
+    <div className=" lg:relative lg:h-full lg:flex lg:px-8 bg-back-ground lg:overflow-hidden ">
       <img
         src={background}
-        className="hidden lg:block lg:absolute lg:h-full lg:w-11/12 lg:ml-7 lg:top-0  lg:z-0 "
+        className="hidden lg:block lg:absolute lg:h-full lg:w-11/12 lg:ml-7 lg:top-0 lg:z-0 "
         alt="Background Image"
       />
       <div className="relative z-10 flex flex-col lg:flex-row items-center w-full justify-around px-8 pt-7  ">
@@ -78,7 +78,7 @@ export default function Hero() {
         </div>
 
         {/* الروبوت */}
-        <div className="z-10 overflow-hidden lg:relative lg:mr-18 lg:z-10 lg:overflow-hidden">
+        <div className="z-10 lg:relative lg:mr-20 lg:z-10 ">
           <img
             src={robotImg}
             alt="robot"
@@ -87,7 +87,7 @@ export default function Hero() {
         </div>
 
         {/* النص الثابت */}
-        <div className="text-xl absolute right-13 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none lg:absolute lg:right-20 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
+        <div className="text-xl absolute right-13 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none lg:absolute lg:right-15 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
           <p>FOR</p>
           <p>EVERY</p>
           <p>BUSINESS</p>

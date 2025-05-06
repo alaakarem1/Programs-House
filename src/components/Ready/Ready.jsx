@@ -5,8 +5,8 @@ import RotatingText from "../RotatingText/RotatingText";
 export default function CallToAction() {
   return (
     <div className="flex lg:items-center lg:justify-center lg:min-h-screen py-10 lg:py-6 px-2 bg-[#02021E] lg:px-4 lg:mb-6">
-      <div className="relative lg:max-w-4xl w-[1500px]  bg-[url('/assets/ready2.svg')]  bg-no-repeat bg-contain bg-center p-10 md:p-16 text-center ">
-        <h1 className="text-sm lg:text-2xl font-normal text-[#000000] lg:mb-6 font-azonix leading-snug">
+      <div className="relative lg:max-w-4xl w-[1500px]  bg-[url('/assets/ready2.svg')]  bg-no-repeat bg-contain bg-center p-10 lg:p-30 text-center ">
+        <h1 className="text-sm lg:text-4xl font-normal text-[#000000] lg:mb-6 font-azonix leading-snug"> 
           READY TO SHAPE <br className="hidden lg:block"/>
           YOUR NEXT{" "}
           <RotatingText

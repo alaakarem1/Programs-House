@@ -15,13 +15,13 @@ export default function About() {
                 />
 
 
-                <div className="relative z-10 flex flex-col gap-8 lg:flex-row items-center justify-between ">
+                <div className="relative z-10 flex flex-col gap-8  lg:flex-row items-center justify-between lg:me-25">
 
                     <div className="w-72 ">
                         <img
                             src={personImg}
                             alt="VR Person"
-                            className="lg:absolute lg:-translate-y-8/12  lg:mt-2 lg:pt-48 lg:ml-22 lg:w-[560px] "
+                            className="lg:absolute lg:-translate-y-8/12 lg:mt-2 lg:pt-48 lg:ml-18 lg:w-[500px] "
                         />
                     </div>
 
@@ -37,7 +37,7 @@ export default function About() {
                         </div>
 
                         <div className=''>
-                            <p className="text-gray-100 mx-2 text-2xl font-azonix font-normal lg:text-xl ">
+                            <p className="text-gray-100 mx-2 text-2xl font-azonix font-normal lg:text-xl lg:mx-0 ">
                                 WE KNOW THAT SUCCESS ISN’T JUST ABOUT IDEAS,{" "}
                                 <br className='hidden lg:block'/>
                                 <br className='hidden lg:block' />
