@@ -68,7 +68,10 @@ export default function Clintes() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
   return (
     <>
-      <section id="projects" className="bg-[#02021E] py-20 text-white text-center">
+      <section
+        id="projects"
+        className="bg-[#02021E] py-20 text-white text-center"
+      >
         <h2 className="text-4xl lg:text-6xl font-normal leading-relaxed font-azonix">
           TRUSTED BY
         </h2>
@@ -159,7 +162,7 @@ export default function Clintes() {
                             <img
                               src={client.src}
                               alt={client.name}
-                              className="mx-auto object-contain py-3"
+                              className="mx-auto object-contain py-3 md:w-50 lg:w-auto"
                             />
                             <p className="font-inter font-medium text-lg mt-3 text-white">
                               {client.name}
@@ -170,10 +173,10 @@ export default function Clintes() {
                             <img
                               src={client.src}
                               alt={client.name}
-                              className={`w-20 mx-auto object-contain transition-transform duration-500 group-hover:scale-110 group-active:scale-110
+                              className={`w-20   mx-auto object-contain transition-transform duration-500 group-hover:scale-110 group-active:scale-110
                                 ${
                                   hoveredIndex === index
-                                    ? "scale-110"
+                                    ? "scale-110 "
                                     : "translate-y-1/2"
                                 }`}
                             />

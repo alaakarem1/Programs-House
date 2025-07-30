@@ -120,7 +120,7 @@ function ServicesSection() {
   return (
     <div className="relative bg-back-ground min-h-screen flex flex-col items-center justify-start pt-30">
       <div className="absolute -top--80 lg:left-1/4 transform lg:-translate-x-1/3 font-glitch uppercase">
-        <h1 className="text-5xl lg:text-[140px] font-normal leading-[0.9] relative">
+        <h1 className="text-5xl lg:text-[140px] font-normal leading-[0.9] relative md:mr-110 lg:mr-0">
           <span id="services" className="block text-white relative">
             OUR
           </span>

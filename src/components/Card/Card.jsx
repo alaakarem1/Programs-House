@@ -23,7 +23,7 @@ export default function Card({
           </div>
         </div>
         <hr className="border-white w-55 lg:w-68 my-4 lg:my-6" />
-        <p className="text-white text-md lg:text-xl leading-relaxed font-cairo lg:mt-4">
+        <p className="text-white text-md lg:text-xl leading-relaxed font-cairo lg:mt-4 md: max-w-[500px]">
           {text}
         </p>
       </div>

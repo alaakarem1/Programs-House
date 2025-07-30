@@ -89,12 +89,12 @@ export default function Hero() {
           <img
             src={robotImg}
             alt="robot"
-            className="absolute overflow-hidden drop-shadow-[0_0_8px_#5f4fd8] top-50 right-20 w-[250px] lg:w-[550px] lg:relative lg:top-0 lg:-right-10  lg:overflow-hidden"
+            className="absolute overflow-hidden drop-shadow-[0_0_8px_#5f4fd8] top-50 right-20 w-[250px] lg:w-[550px] lg:relative lg:top-0 lg:left-10 md:left-66  lg:overflow-hidden"
           />
         </div>
 
         {/* النص الثابت */}
-        <div className="text-xl absolute right-13 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none lg:absolute lg:right-15 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
+        <div className="text-xl absolute right-13 top-[40%] font-glitch font-bold text-white leading-tight z-1 pointer-events-none md:right-55 lg:absolute lg:right-25 lg:top-[20%] lg:text-left lg:text-5xl lg:font-glitch lg:font-bold  lg:text-white lg:leading-tight ">
           <p>FOR</p>
           <p>EVERY</p>
           <p>BUSINESS</p>
