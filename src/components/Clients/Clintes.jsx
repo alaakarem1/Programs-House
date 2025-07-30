@@ -173,7 +173,7 @@ export default function Clintes() {
                             <img
                               src={client.src}
                               alt={client.name}
-                              className={`w-20   mx-auto object-contain transition-transform duration-500 group-hover:scale-110 group-active:scale-110
+                              className={`w-20   md:w-25 mx-auto object-contain transition-transform duration-500 group-hover:scale-110 group-active:scale-110
                                 ${
                                   hoveredIndex === index
                                     ? "scale-110 "

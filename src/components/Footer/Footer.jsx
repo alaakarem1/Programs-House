@@ -8,7 +8,7 @@ function Footer() {
     <div className=" bg-[#02021E]">
       <div className="relative text-white bg-[url('/assets/Footer-bg.png')] lg:px-0  bg-cover bg-no-repeat ">
         <div className="px-6 flex flex-col items-center lg:gap-30">
-          <h1 className="text-5xl py-10 lg:py-0 md:text-9xl font-normal text-center font-glitch">
+          <h1 className="text-5xl py-10 lg:py-0 md:text-7xl font-normal text-center font-glitch lg:text-9xl ">
             PROGRAMS
             <br />
             HOUSE
@@ -16,7 +16,7 @@ function Footer() {
 
           <div className=" flex flex-col lg:flex-row lg:justify-between w-full gap-15 lg:gap-6 lg:pl-10 text-sm text-center md:text-left">
             <div className="flex flex-col gap-2">
-              <span className="uppercase font-azonix font-thin text-xl">
+              <span className="uppercase font-azonix font-thin text-xl md:m-auto">
                 Found us here:
               </span>
               <div className="flex gap-7 justify-center md:justify-start text-4xl mx-auto">
@@ -38,7 +38,7 @@ function Footer() {
               </div>
             </div>
 
-            <div className="flex flex-row gap-5 lg:gap-8 lg:pr-10 text-sm text-white justify-between lg:items-center ">
+            <div className="flex flex-row gap-5 lg:gap-8 lg:pr-10 text-sm text-white justify-evenly lg:items-center ">
               {/* Mail Section */}
               <a href="mailto:contact@programshouse.com" target="__blank">
                 <div className="flex flex-col lg:items-center md:items-start text-center md:text-left font-cairo">

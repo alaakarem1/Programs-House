@@ -12,7 +12,7 @@ export default function Hero() {
         className="hidden lg:block lg:absolute lg:h-full lg:w-11/12 lg:ml-7 lg:top-0 lg:z-0 "
         alt="Background Image"
       />
-      <div className="relative z-10 flex flex-col lg:flex-row items-center w-full justify-around px-8 pt-7  ">
+      <div className="relative z-10 flex flex-col md:flex lg:flex-row items-center w-full justify-around px-8 pt-7  ">
         {/* النصوص */}
         <div className=" lg:space-y-6 text-white">
           <h1 className=" hero-title font-azonix text-4xl lg:text-7xl lg:ml-7">
