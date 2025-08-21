@@ -86,12 +86,12 @@ function ServicesContent({ isHovered, setIsHovered }) {
         {services.map((service, index) => (
           <div
             key={index}
-            className="group bg-gray-100 lg:py-5 lg:px-16 rounded-3xl border border-gray-300 
+            className="group bg-gray-100 lg:py-5 lg:px-5 rounded-3xl border border-gray-300 
              hover:shadow-[-20px_20px_4px_rgba(0,0,0,3)] hover:-translate-y-2
              active:shadow-[-20px_20px_4px_rgba(0,0,0,3)] active:-translate-y-2
              transition-all duration-500 ease-in-out transform py-2"
           >
-            <div className="flex items-center gap-1 mb-4 pl-5 lg:pl-0">
+            <div className="flex items-center gap-1 mb-4 pl-5 lg:p-0">
               <img
                 src={service.icon}
                 alt={service.title}
@@ -104,7 +104,7 @@ function ServicesContent({ isHovered, setIsHovered }) {
                 {service.title}
               </h2>
             </div>
-            <p className="text-gray-600 text-sm  px-5 lg:text-xl lg:pl-32 font-poppin font-light">
+            <p className="text-gray-600 text-sm  px-3 lg:text-xl lg:pl-20 font-poppin font-light">
               {service.description}
             </p>
           </div>
@@ -120,7 +120,7 @@ function ServicesSection() {
   return (
     <div className="relative bg-back-ground min-h-screen flex flex-col items-center justify-start pt-30">
       <div className="absolute -top--80 lg:left-1/4 transform lg:-translate-x-1/3 font-glitch uppercase">
-        <h1 className="text-5xl lg:text-[140px] font-normal leading-[0.9] relative md:mr-110 lg:mr-0">
+        <h1 className="text-5xl lg:text-[140px] font-normal leading-[0.9] relative md:mr-110 lg:mr-10 ">
           <span id="services" className="block text-white relative">
             OUR
           </span>

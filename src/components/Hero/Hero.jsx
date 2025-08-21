@@ -28,7 +28,7 @@ export default function Hero() {
 
           <h1 className="text-4xl font-bold text-center lg:text-start">
             <span className="text-transparent bg-clip-text bg-gradient-to-r  from-[#FF6F00]  to-[#007BFF] font-azonix font-normal text-3xl text-center lg:text-6xl lg:ml-5">
-              DEVELPERS
+              DEVELOPER
             </span>
           </h1>
           <a href="#discover">
