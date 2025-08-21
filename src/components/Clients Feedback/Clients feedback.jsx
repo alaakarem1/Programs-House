@@ -71,11 +71,21 @@ export default function Clients_feedback() {
 
   return (
     <>
-      <section id="clientReview" className="bg-[#080820] py-28 lg:py-16 lg:px-12">
+      <section
+        id="clientReview"
+        className="bg-[#080820] py-28 lg:py-16 lg:px-12"
+      >
         <div className="container lg:mx-auto lg:px-6 px-4 flex flex-col gap-5 lg:flex-row lg:items-center lg:gap-10">
           {/* Left Side */}
           <div className="flex flex-col items-center lg:items-start lg:max-w-sm">
-            <h2 className="text-3xl lg:text-4xl text-white font-normal font-azonix">4.9</h2>
+            <div className="flex">
+              {" "}
+              <h2 className="text-3xl lg:text-4xl text-white font-normal font-azonix">
+                4.9
+              </h2>
+              <img src={starsImage} alt="" className="w-10 pl-3 lg:w-12 lg:pl-3" />
+            </div>
+
             <p className="text-white font-cairo text-2xl font-normal mt-5">
               Our clients’ satisfaction isn’t just a goal — it’s the standard we
               set for every project we deliver
@@ -85,13 +95,13 @@ export default function Clients_feedback() {
                 onClick={handlePrev}
                 className="w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white  "
               >
-                <img src={arrow1}  alt="" className="w-3 lg:w-5"/>
+                <img src={arrow1} alt="" className="w-3 lg:w-5" />
               </button>
               <button
                 onClick={handleNext}
                 className="w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white "
               >
-                <img src={arrow2} alt=""  className="w-3 lg:w-5"/>
+                <img src={arrow2} alt="" className="w-3 lg:w-5" />
               </button>
             </div>
           </div>
@@ -107,7 +117,6 @@ export default function Clients_feedback() {
                 position={item.position}
                 profileImage={profileImage}
                 starsImage={starsImage}
-                
               />
             ))}
           </div>
