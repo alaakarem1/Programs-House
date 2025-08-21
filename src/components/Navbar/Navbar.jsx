@@ -8,7 +8,7 @@ export default function Navbar() {
 
   return (
     <div className=" bg-back-ground py-6">
-      <div className="bg-back-ground py-4 px-4 mx-4 lg:px-16 lg:mx-16 shadow-md border-t-2 border-b-2  border-gray-100">
+      <div className="bg-back-ground py-4 px-4 mx-4 lg:px-16 lg:mx-8 shadow-md border-t-2 border-b-2  border-gray-100">
         <nav className="flex relative justify-between items-center">
           {/* Logo */}
           <a href="#">

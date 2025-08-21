@@ -6,10 +6,10 @@ import vectorImg from "../../assets/Vector 1.png";
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <div className=" lg:relative lg:h-full lg:flex lg:px-8 bg-back-ground lg:overflow-hidden ">
+    <div className=" lg:relative lg:h-full lg:flex lg:mx-8 bg-back-ground lg:overflow-hidden ">
       <img
         src={background}
-        className="hidden lg:block lg:absolute lg:h-full lg:w-11/12 lg:ml-7 lg:top-0 lg:z-0 "
+        className="hidden lg:block lg:absolute lg:h-full lg:w-full lg:top-0 lg:z-0  "
         alt="Background Image"
       />
       <div className="relative z-10 flex flex-col md:flex lg:flex-row items-center w-full justify-around px-8 pt-7  ">
@@ -18,11 +18,6 @@ export default function Hero() {
           <h1 className=" hero-title font-azonix text-4xl lg:text-7xl lg:ml-7">
             WE BELIEVE
           </h1>
-
-          {/* <h1 className="text-4xl md:text-5xl font-bold font-azonix ">
-                        <span className="text-transparent  bg-clip-text bg-gradient-to-r from-orange-500 to-orange-300">WE</span>{' '}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#2B448D] to-[#5DA4F6]">BELEVE</span>
-                    </h1> */}
 
           <p className="text-xl text-center  font-normal leading-relaxed font-azonix lg:text-4xl lg:pt-5 lg:ml-5 lg:text-left">
             THERE'S NO BAD{" "}
@@ -68,20 +63,6 @@ export default function Hero() {
               </button>
             </motion.div>
           </a>
-
-          {/* <button className="mt-20 px-7 py-3 ml-36 font-nebula text-2xl rounded-full bg-dis-btn text-white border-2  flex  items-center gap-2 ">
-                        DISCOVER NOW
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none" className='ml-4'>
-                            <circle cx="20" cy="20" r="20" fill="white" />
-                            <foreignObject x="6" y="6" width="28" height="28">
-                                <img
-                                    src={Rocket}
-                                    alt="icon"
-                                    className="w-full h-full "
-                                />
-                            </foreignObject>
-                        </svg>
-                    </button> */}
         </div>
 
         {/* الروبوت */}
