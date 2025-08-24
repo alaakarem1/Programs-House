@@ -20,10 +20,10 @@ export default function About() {
             <img
               src={personImg}
               alt="VR Person"
-              className=" lg:w-[600px]  "
+              className=" lg:w-[600px] md:w-[350px] "
             />
 
-          <div className="flex flex-col lg:w-1/2 text-white text-center lg:text-left lg:space-y-5 lg:self-end lg:pb-10 font-azonix ">
+          <div className="flex flex-col lg:w-1/2 text-white text-center md:space-y-2 lg:text-left lg:space-y-5 lg:self-end lg:pb-10 font-azonix ">
             <div className="lg:pl-9 lg:mt-10">
               <p className="uppercase text-2xl  lg:text-3xl  tracking-widest text-white lg:pb-4">
                 AT
@@ -36,7 +36,7 @@ export default function About() {
             </div>
 
             <div className="">
-              <p className="text-gray-100 mx-2 text-2xl font-azonix font-normal lg:text-xl lg:mx-0 ">
+              <p className="text-gray-100 mx-2 text-2xl font-azonix font-normal md:leading-10 lg:text-xl lg:mx-0 ">
                 WE KNOW THAT SUCCESS ISN’T JUST ABOUT IDEAS,{" "}
                 <br className="hidden lg:block" />
                 <br className="hidden lg:block" />
@@ -61,7 +61,7 @@ export default function About() {
                     ease: "easeInOut",
                   },
                 }}
-                className="relative mt-10 p-[2px] self-center lg:inline-block lg:mr-30 w-fit lg:mt-20 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
+                className="relative mt-10 p-[2px] self-center md:mt-0 lg:inline-block lg:mr-30 w-fit lg:mt-20 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
               >
                 <button className="relative z-10 px-3  py-2 w-fit h-full lg:px-6 lg:py-4 rounded-full bg-[#0B0896] flex items-center justify-center">
                   <span className="font-nebula text-xl tracking-widest text-white">
