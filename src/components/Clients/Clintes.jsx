@@ -70,19 +70,19 @@ export default function Clintes() {
     <>
       <section
         id="projects"
-        className="bg-[#02021E] py-20 text-white text-center"
+        className="bg-[#02021E] py-20 text-center text-white"
       >
-        <h2 className="text-4xl lg:text-6xl font-normal leading-relaxed font-azonix">
+        <h2 className="font-azonix text-4xl leading-relaxed font-normal lg:text-6xl">
           TRUSTED BY
         </h2>
         <h2>
-          <span className="text-4xl text-transparent bg-clip-text bg-gradient-to-r from-[#FF6F00] to-[#007BFF] font-azonix font-normal lg:text-6xl">
+          <span className="font-azonix bg-gradient-to-r from-[#FF6F00] to-[#007BFF] bg-clip-text text-4xl font-normal text-transparent lg:text-6xl">
             LEADING BUSINESSES
           </span>
         </h2>
 
-        <div className="overflow-x-auto py-16 px-4">
-          <table className="table-auto border-separate border-spacing-0 w-full max-w-6xl mx-auto">
+        <div className="overflow-x-auto px-4 py-16">
+          <table className="mx-auto w-full max-w-6xl table-auto border-separate border-spacing-0">
             {/* <tbody>
               {[0, 1].map((row) => (
                 <tr key={row}>
@@ -147,9 +147,7 @@ export default function Clintes() {
                     return (
                       <td
                         key={index}
-                        className={`text-center align-middle w-[300px] h-[200px] px-4 
-              ${!isFirstRow ? "border-t-2 border-[#282840]" : ""}
-              ${!isFirstCol ? "border-l-2 border-[#282840]" : ""}`}
+                        className={`h-[200px] w-[300px] px-4 text-center align-middle ${!isFirstRow ? "border-t-2 border-[#282840]" : ""} ${!isFirstCol ? "border-l-2 border-[#282840]" : ""}`}
                         onMouseEnter={() => {
                           if (index !== 7) setHoveredIndex(index);
                         }}
@@ -162,9 +160,9 @@ export default function Clintes() {
                             <img
                               src={client.src}
                               alt={client.name}
-                              className="mx-auto object-contain py-3 md:w-50 lg:w-auto"
+                              className="mx-auto object-contain py-3 w-35 md:pt-15 "
                             />
-                            <p className="font-inter font-medium text-lg mt-3 text-white">
+                            <p className="font-inter mt-3 text-lg font-medium text-white">
                               {client.name}
                             </p>
                           </>
@@ -173,18 +171,17 @@ export default function Clintes() {
                             <img
                               src={client.src}
                               alt={client.name}
-                              className={`w-20   md:w-25 mx-auto object-contain transition-transform duration-500 group-hover:scale-110 group-active:scale-110
-                                ${
-                                  hoveredIndex === index
-                                    ? "scale-110 "
-                                    : "translate-y-1/2"
-                                }`}
+                              className={`mx-auto w-20 object-contain transition-transform duration-500 group-hover:scale-110 group-active:scale-110 md:w-25 ${
+                                hoveredIndex === index
+                                  ? "scale-110"
+                                  : "translate-y-1/2"
+                              }`}
                             />
                             <p
-                              className={`font-inter font-medium text-sm mt-2 text-[#FFFFFF99] transition-all duration-300 ease-in-out  w-full text-center ${
+                              className={`font-inter mt-2 w-full text-center text-sm font-medium text-[#FFFFFF99] transition-all duration-300 ease-in-out ${
                                 hoveredIndex === index
-                                  ? "opacity-100 translate-y-0"
-                                  : "opacity-0 -translate-y-2 pointer-events-none"
+                                  ? "translate-y-0 opacity-100"
+                                  : "pointer-events-none -translate-y-2 opacity-0"
                               }`}
                             >
                               {client.name}
