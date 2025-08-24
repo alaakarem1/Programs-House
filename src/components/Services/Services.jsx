@@ -47,7 +47,7 @@ function ServicesContent({ isHovered, setIsHovered }) {
           </p>
         </div>
 
-        <div className="relative mx-auto pt-5 lg:pt-8 lg:right-10 md:mt-0 flex-shrink-0 transition-all duration-300 ease-in-out">
+        <div className="relative mx-auto pt-5 lg:pt-8 lg:right-10 md:mt-0 md:left-20 md:pt-2 flex-shrink-0 transition-all duration-300 ease-in-out">
           <a
             href="https://wa.me/201070101091"
             target="_blank"
