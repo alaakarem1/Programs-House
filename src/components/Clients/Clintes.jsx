@@ -70,7 +70,7 @@ export default function Clintes() {
     <>
       <section
         id="projects"
-        className="bg-[#02021E] py-20 text-center text-white"
+        className="bg-[#02021E] py-20 text-center text-white md:py-0 lg:py-20"
       >
         <h2 className="font-azonix text-4xl leading-relaxed font-normal lg:text-6xl">
           TRUSTED BY
@@ -160,7 +160,7 @@ export default function Clintes() {
                             <img
                               src={client.src}
                               alt={client.name}
-                              className="mx-auto object-contain py-3 w-35 md:pt-15 "
+                              className="mx-auto w-35 object-contain py-3 md:pt-15"
                             />
                             <p className="font-inter mt-3 text-lg font-medium text-white">
                               {client.name}
