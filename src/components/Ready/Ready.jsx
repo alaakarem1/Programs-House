@@ -4,9 +4,9 @@ import RotatingText from "../RotatingText/RotatingText";
 
 export default function CallToAction() {
   return (
-    <div className="flex items-center justify-center min-h-screen py-10 px-4 bg-[#02021E]">
-      <div className="relative w-full max-w-[95%] sm:max-w-2xl md:max-w-3xl lg:max-w-7xl bg-[url('/assets/ready2.svg')] bg-no-repeat bg-contain bg-center p-6 sm:p-8 md:p-15 lg:p-20 text-center">
-        <h1 className="text-base sm:text-lg md:text-2xl lg:text-4xl font-normal text-black mb-6 font-azonix leading-snug">
+    <div className="flex items-center justify-center bg-[#02021E] px-0 py-10 md:py-25 lg:min-h-screen lg:py-10">
+      <div className="relative w-full bg-[url('/assets/ready2.svg')] bg-cover md:bg-contain mx-8 rounded-2xl bg-center bg-no-repeat p-6 text-center sm:max-w-2xl sm:p-8 md:max-w-3xl md:p-15 lg:max-w-7xl lg:p-20">
+        <h1 className="font-azonix mb-6 text-base leading-snug font-normal text-black sm:text-lg md:text-2xl lg:text-4xl">
           READY TO SHAPE <br className="hidden lg:block" />
           YOUR NEXT{" "}
           <RotatingText
@@ -35,7 +35,7 @@ export default function CallToAction() {
           />
         </h1>
 
-        <p className="text-[#666666] font-cairo text-sm sm:text-base md:max-w-[1000] lg:text-xl max-w-2xl mx-auto mb-5 lg:mb-8">
+        <p className="font-cairo mx-auto mb-5 hidden max-w-2xl text-sm text-[#666666] sm:text-base md:block md:max-w-[1000] md:text-2xl lg:mb-8 lg:text-xl">
           Let’s explore how the right software solutions can bring your vision
           to life combining smart technology with real business impact.
         </p>
@@ -46,10 +46,10 @@ export default function CallToAction() {
               backgroundPosition: "200% center",
               transition: { duration: 2, repeat: Infinity, ease: "circInOut" },
             }}
-            className="inline-block mx-auto p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-dis-btn via-[#FF6F00] to-[#FF6F00]"
+            className="from-dis-btn mx-auto inline-block rounded-full bg-gradient-to-r via-[#FF6F00] to-[#FF6F00] bg-[length:200%_200%] p-[2px]"
           >
-            <button className="relative z-10 px-4 py-2 sm:py-3 sm:px-6 lg:px-4 lg:py-4 w-full rounded-full bg-[#0B0896] flex items-center justify-center">
-              <span className="font-nebula text-sm sm:text-base lg:text-xl tracking-widest text-white">
+            <button className="relative z-10 flex w-full items-center justify-center rounded-full bg-[#0B0896] px-4 py-2 sm:px-6 sm:py-3 lg:px-4 lg:py-4">
+              <span className="font-nebula text-sm tracking-widest text-white sm:text-base lg:text-xl">
                 Book a Call
               </span>
               <svg
@@ -65,7 +65,7 @@ export default function CallToAction() {
                   <img
                     src="assets/calender.gif"
                     alt="icon"
-                    className="w-full h-full"
+                    className="h-full w-full"
                   />
                 </foreignObject>
               </svg>
