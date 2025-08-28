@@ -48,7 +48,8 @@ export default function CallToAction() {
             }}
             className="from-dis-btn mx-auto inline-block rounded-full bg-gradient-to-r via-[#FF6F00] to-[#FF6F00] bg-[length:200%_200%] p-[2px]"
           >
-            <button className="relative z-10 flex w-full items-center justify-center rounded-full bg-[#0B0896] px-4 py-2 sm:px-6 sm:py-3 lg:px-4 lg:py-4">
+            
+            <button className="relative z-10 flex w-full cursor-pointer items-center justify-center rounded-full bg-[#0B0896] px-4 py-2 sm:px-6 sm:py-3 lg:px-4 lg:py-4">
               <span className="font-nebula text-sm tracking-widest text-white sm:text-base lg:text-xl">
                 Book a Call
               </span>

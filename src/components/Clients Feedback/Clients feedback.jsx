@@ -93,13 +93,13 @@ export default function Clients_feedback() {
             <div className="hidden lg:flex gap-6 mt-5 lg:gap-14 lg:mt-18 mx-auto">
               <button
                 onClick={handlePrev}
-                className="w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white  "
+                className="w-10 h-10 cursor-pointer lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white  "
               >
                 <img src={arrow1} alt="" className="w-3 lg:w-5" />
               </button>
               <button
                 onClick={handleNext}
-                className="w-10 h-10 lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white "
+                className="w-10 h-10 cursor-pointer lg:w-14 lg:h-14 flex items-center justify-center rounded-full border-2 border-white text-white "
               >
                 <img src={arrow2} alt="" className="w-3 lg:w-5" />
               </button>

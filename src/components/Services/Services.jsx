@@ -56,7 +56,7 @@ function ServicesContent({ isHovered, setIsHovered }) {
             <button
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
-              className="relative  lg:w-52 lg:h-[300px] transition-all duration-300 ease-in-out animate-spin-slow"
+              className="relative cursor-pointer lg:w-52 lg:h-[300px] transition-all duration-300 ease-in-out animate-spin-slow"
             >
               <img
                 src={isHovered ? textButton2 : textButton}

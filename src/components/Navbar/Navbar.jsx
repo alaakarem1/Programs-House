@@ -7,35 +7,35 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className=" bg-back-ground py-6">
-      <div className="bg-back-ground py-4 px-4 mx-4 lg:px-16 lg:mx-8 shadow-md border-t-2 border-b-2  border-gray-100">
-        <nav className="flex relative justify-between items-center">
+    <div className="bg-back-ground py-6">
+      <div className="bg-back-ground mx-4 border-t-2 border-b-2 border-gray-100 px-4 py-4 shadow-md lg:mx-8 lg:px-16">
+        <nav className="relative flex items-center justify-between">
           {/* Logo */}
           <a href="#">
             <img src={Logo} alt="Logo" className="h-10" />
           </a>
 
           {/* Mobile toggle */}
-          <div className=" md:hidden absolute right-0 ">
+          <div className="absolute right-0 md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white text-2xl"
+              className="text-2xl text-white"
             >
               {isOpen ? <FiX /> : <FiMenu />}
             </button>
           </div>
 
           {/* Desktop menu */}
-          <ul className="hidden md:flex items-center gap-10 text-white font-semibold">
+          <ul className="hidden items-center gap-10 font-semibold text-white md:flex">
             <a
-              className=" cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+              className="hover:text-nav-color active:text-nav-color font-cairo cursor-pointer transition"
               href="#whoWeAre"
             >
               Who we are
             </a>
             <div className="hover:text-nav-color active:text-nav-color">
               <a
-                className="relative group cursor-pointer transition flex items-center gap-1 font-cairo"
+                className="group font-cairo relative flex cursor-pointer items-center gap-1 transition"
                 href="#services"
               >
                 Our Services
@@ -53,7 +53,7 @@ export default function Navbar() {
               </a>
             </div>
             <a
-              className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+              className="hover:text-nav-color active:text-nav-color font-cairo cursor-pointer transition"
               href="#projects"
             >
               Projects
@@ -75,9 +75,9 @@ export default function Navbar() {
                   ease: "easeInOut",
                 },
               }}
-              className="hidden md:inline-block p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
+              className="from-btn hidden rounded-full bg-gradient-to-r via-white to-white bg-[length:200%_200%] p-[2px] md:inline-block"
             >
-              <button className="flex items-center gap-5 bg-btn text-white font-alex py-2 px-5 rounded-full">
+              <button className="bg-btn font-alex flex cursor-pointer items-center gap-5 rounded-full px-5 py-2 text-white">
                 Contact Us
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ export default function Navbar() {
                 >
                   <circle cx="20" cy="20" r="20" fill="white" />
                   <foreignObject x="6" y="6" width="28" height="28">
-                    <img src={Rocket} alt="icon" className="w-full h-full" />
+                    <img src={Rocket} alt="icon" className="h-full w-full" />
                   </foreignObject>
                 </svg>
               </button>
@@ -105,24 +105,24 @@ export default function Navbar() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className=" md:hidden mt-4 flex flex-col gap-4 text-white font-semibold absolute w-full bg-back-ground  z-50 left-0 items-center text-center"
+              className="bg-back-ground absolute left-0 z-50 mt-4 flex w-full flex-col items-center gap-4 text-center font-semibold text-white md:hidden"
             >
-              <div className="md:hidden mt-4 flex flex-col gap-4 text-white font-semibold items-center text-center">
+              <div className="mt-4 flex flex-col items-center gap-4 text-center font-semibold text-white md:hidden">
                 <a
                   href="#whoWeAre"
-                  className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+                  className="hover:text-nav-color active:text-nav-color font-cairo cursor-pointer transition"
                 >
                   Who we are
                 </a>
                 <a
                   href="#services"
-                  className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+                  className="hover:text-nav-color active:text-nav-color font-cairo cursor-pointer transition"
                 >
                   Our Services
                 </a>
                 <a
                   href="#projects"
-                  className="cursor-pointer hover:text-nav-color active:text-nav-color transition font-cairo"
+                  className="hover:text-nav-color active:text-nav-color font-cairo cursor-pointer transition"
                 >
                   Projects
                 </a>
@@ -140,9 +140,9 @@ export default function Navbar() {
                         ease: "easeInOut",
                       },
                     }}
-                    className="inline-block p-[1px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white self-center"
+                    className="from-btn inline-block self-center rounded-full bg-gradient-to-r via-white to-white bg-[length:200%_200%] p-[1px]"
                   >
-                    <button className="flex items-center gap-3 bg-btn text-white font-alex py-1.5 px-4 rounded-full text-sm ">
+                    <button className="bg-btn font-alex flex items-center gap-3 rounded-full px-4 py-1.5 text-sm text-white">
                       Contact Us
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -156,7 +156,7 @@ export default function Navbar() {
                           <img
                             src={Rocket}
                             alt="icon"
-                            className="w-full h-full"
+                            className="h-full w-full"
                           />
                         </foreignObject>
                       </svg>
@@ -164,8 +164,7 @@ export default function Navbar() {
                   </motion.div>
                 </a>
               </div>
-              <div className="w-[90%] border-t-2 "></div>
-
+              <div className="w-[90%] border-t-2"></div>
             </motion.div>
           )}
         </AnimatePresence>

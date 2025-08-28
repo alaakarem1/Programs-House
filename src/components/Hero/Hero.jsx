@@ -43,7 +43,7 @@ export default function Hero() {
               }}
               className="from-dis-btn via-btn-color to-btn-color relative mt-100 ml-7 inline-block rounded-full bg-gradient-to-r bg-[length:200%_200%] p-[2px] md:mt-0 lg:mx-14 lg:mt-20 lg:ml-36 lg:p-[2px]"
             >
-              <button className="bg-dis-btn relative z-10 flex h-full w-full items-center justify-center rounded-full px-4 py-1 lg:relative lg:z-10 lg:flex lg:items-center lg:justify-center lg:px-7 lg:py-3">
+              <button className="bg-dis-btn relative z-10 flex h-full w-full cursor-pointer items-center justify-center rounded-full px-4 py-1 lg:relative lg:z-10 lg:flex lg:items-center lg:justify-center lg:px-7 lg:py-3">
                 <span className="font-nebula text-sm tracking-widest text-white lg:text-xl">
                   DISCOVER NOW
                 </span>
@@ -71,11 +71,11 @@ export default function Hero() {
             <img
               src={robotImg}
               alt="robot"
-              className="absolute top-50 right-20 md:top-auto md:right-auto w-[250px] overflow-hidden drop-shadow-[0_0_8px_#5f4fd8] md:relative lg:top-0 lg:left-10 lg:w-[550px] lg:overflow-hidden"
+              className="absolute top-50 right-20 w-[250px] overflow-hidden drop-shadow-[0_0_8px_#5f4fd8] md:relative md:top-auto md:right-auto lg:top-0 lg:left-10 lg:w-[550px] lg:overflow-hidden"
             />
           </div>
           {/* النص الثابت */}
-          <div className="font-glitch lg:font-glitch pointer-events-none absolute top-[40%] right-13 z-1 text-xl leading-tight font-bold text-white md:top-[25%] md:right-12 lg:absolute lg:top-[20%] lg:right-25 lg:text-left lg:text-5xl lg:leading-tight lg:font-bold lg:text-white">
+          <div className="font-glitch lg:font-glitch pointer-events-none absolute top-[40%] right-13 z-1 text-xl leading-tight font-bold text-white md:top-[25%] md:right-12 lg:absolute lg:top-[20%] lg:right-20 lg:text-left lg:text-5xl lg:leading-tight lg:font-bold lg:text-white">
             <p>FOR</p>
             <p>EVERY</p>
             <p>BUSINESS</p>

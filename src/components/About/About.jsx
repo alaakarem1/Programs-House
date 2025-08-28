@@ -63,7 +63,7 @@ export default function About() {
                 }}
                 className="relative mt-10 p-[2px] self-center md:mt-0 lg:inline-block lg:mr-30 w-fit lg:mt-20 lg:p-[2px] rounded-full bg-[length:200%_200%] bg-gradient-to-r from-btn via-white to-white"
               >
-                <button className="relative z-10 px-3  py-2 w-fit h-full lg:px-6 lg:py-4 rounded-full bg-[#0B0896] flex items-center justify-center">
+                <button className="relative cursor-pointer z-10 px-3  py-2 w-fit h-full lg:px-6 lg:py-4 rounded-full bg-[#0B0896] flex items-center justify-center">
                   <span className="font-nebula text-xl tracking-widest text-white">
                     WHO WE ARE
                   </span>
