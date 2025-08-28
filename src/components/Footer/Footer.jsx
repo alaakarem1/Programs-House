@@ -111,7 +111,7 @@ function Footer() {
           </a>
         </div>
 
-        <div className="text-2xl pb-10 lg:text-4xl text-center mt-9 font-glitch">
+        <div className="md:text-2xl pb-10 lg:text-4xl text-center mt-9 font-glitch">
           SMART <span className="text-[#007BFF]">SOLUTIONS</span> FOR SMARTER{" "}
           <span className="text-[#FF6F00]">GROWTH</span>
         </div>
