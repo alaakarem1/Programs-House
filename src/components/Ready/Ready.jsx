@@ -35,7 +35,7 @@ export default function CallToAction() {
           />
         </h1>
 
-        <p className="font-cairo mx-auto mb-5 hidden max-w-2xl text-sm text-[#666666] sm:text-base md:block md:max-w-[1000] md:text-2xl lg:mb-8 lg:text-xl">
+        <p className="font-cairo mx-auto mb-5 hidden max-w-3xl text-sm text-[#666666] sm:text-base md:block md:max-w-[1000] md:text-2xl lg:mb-8 lg:text-xl">
           Let’s explore how the right software solutions can bring your vision
           to life combining smart technology with real business impact.
         </p>
